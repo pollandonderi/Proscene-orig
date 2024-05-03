@@ -1,0 +1,79 @@
+<header class="primary-header flex">
+    <div class="logo1">
+        <a routerLink=""><img class="logo" src="assets/logo.png" width="100%" height="30px" alt="" srcset=""></a>
+    </div>
+    <button aria-controls="primary-navigation" aria-expanded="false" class="mobile-nav-toggle"><span class="sr-only">Menu</span></button>
+    <!-- or instead of using the span class to add the menu text you can use aria-label -->
+    <nav class="space-around">
+        <ul id="primary-navigation" class="primary-navigation flex" data-attribute="false">
+            <li >
+                <a routerLink="" class="active">
+                    <span aria-hidden="true"></span>Home
+                </a>
+            </li>
+           
+            <li class="dropdown">
+                <a href="#" class="dropbtn" (click)="toggleDropdown($event)">
+                    <span aria-hidden="true"></span>About us
+                </a>
+                <div class="dropdown-content">
+                    <a routerLink="/about-us/mission">Mission</a>
+                    <a routerLink="/about-us/vision">Vision</a>
+                    <a routerLink="/about-us/team">Our Team</a>
+                </div>
+            </li> 
+            <li class="dropdown">
+                <a href="#" class="dropbtn" (click)="toggleDropdown($event)">
+                    <span aria-hidden="true"></span>About us
+                </a>
+
+                <div class="dropdown-content">
+                    <a routerLink="/about-us/mission">Mission</a>
+                    <a routerLink="/about-us/vision">Vision</a>
+                    <a routerLink="/about-us/team">Our Team</a>
+                </div>
+            </li> 
+            <li class="dropdown">
+                <a href="#" class="dropbtn" (click)="toggleDropdown($event)">
+                    <span aria-hidden="true"></span>About us
+                </a>
+                <div class="dropdown-content">
+                    <a routerLink="/about-us/mission">Mission</a>
+                    <a routerLink="/about-us/vision">Vision</a>
+                    <a routerLink="/about-us/team">Our Team</a>
+                    <a routerLink="/about-us/mission">Mission</a>
+                    <a routerLink="/about-us/vision">Vision</a>
+                    <a routerLink="/about-us/team">Our Team</a>
+                    <a routerLink="/about-us/mission">Mission</a>
+                    <a routerLink="/about-us/vision">Vision</a>
+                    <a routerLink="/about-us/team">Our Team</a>
+                </div>
+            </li> 
+            <li class="active">
+                <a routerLink="/services">
+                    <span aria-hidden="true"></span>Services
+                </a>
+            </li>
+       
+<!--         
+            <li class="active">
+                <a routerLink="/contact-us">
+                    <span aria-hidden="true"></span>Contact us
+                </a>
+            </li>
+            <li class="active primarymodes">
+                <a routerLink="/task">
+                    <span aria-hidden="true" class="black"> Plan</span>
+                </a>
+            </li> -->
+            <li class="active primarymodes">
+                <a routerLink="/rate">
+                    <span aria-hidden="true" class="black">Rate Us</span>
+                </a>
+            </li>
+        </ul>
+        <ul id="primary-navigation" class="primary-navigation flex section2 " data-attribute="false">
+            <button class="demo-button">See demo</button>
+        </ul> 
+    </nav>
+</header>
