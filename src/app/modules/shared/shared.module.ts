@@ -22,7 +22,7 @@ import { heroBars3CenterLeft, heroChevronDown} from '@ng-icons/heroicons/outline
   imports: [
     CommonModule,
     AppRoutingModule,
-    NgIconsModule.withIcons({heroChevronDown, heroBars3CenterLeft  }),
+    NgIconsModule.withIcons({heroChevronDown, heroBars3CenterLeft,  }),
   ]
 })
 export class SharedModule { }

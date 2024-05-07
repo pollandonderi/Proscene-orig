@@ -80,6 +80,13 @@ font-family: 'Ubuntu', sans-serif;
     text-transform: capitalize;
     display: inline;
   }
+  .demo-button{
+    Border: 1px solid #bf2525;
+  padding: 4px 8px;
+  background-color: #0a0a22;
+  color: #bf2525;
+  border-radius: 30px;
+  }
 @media (min-width:35em) and (max-width:60em) {
     .miniheadings{
         font-size: 3rem;

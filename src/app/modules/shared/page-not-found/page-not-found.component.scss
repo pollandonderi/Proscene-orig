@@ -1,0 +1,12 @@
+.main{
+    height: 100svh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    background-image: url('/assets/404-error.svg');
+}
+.words{
+    font-size: large;
+    padding-block: 8em;
+}
