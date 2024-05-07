@@ -1,74 +1,71 @@
 <header class="primary-header flex">
-    <div class="logo1">
-        <a routerLink=""><img class="logo" src="assets/logo.png" width="100%" height="30px" alt="" srcset=""></a>
+    <div class="logo1 pl-12">
+        <a routerLink="">
+            <img class="logo" src="assets/logo-white.png" style="height: 30px;"  alt="logo" srcset="">
+        </a>
     </div>
     <button aria-controls="primary-navigation" aria-expanded="false" class="mobile-nav-toggle"><span class="sr-only">Menu</span></button>
     <!-- or instead of using the span class to add the menu text you can use aria-label -->
     <nav class="space-around">
         <ul id="primary-navigation" class="primary-navigation flex" data-attribute="false">
             <li >
-                <a routerLink="" class="active">
+                <a routerLink="#" class="active">
                     <span aria-hidden="true"></span>Home
                 </a>
             </li>
            
             <li class="dropdown">
-                <a href="#" class="dropbtn" (click)="toggleDropdown($event)">
-                    <span aria-hidden="true"></span>About us
+                <a href="#" class="dropbtn chevron" (click)="toggleDropdown($event)">
+                        <span aria-hidden="true"></span>Solutions <ng-icon name="heroChevronDown"></ng-icon>
                 </a>
                 <div class="dropdown-content">
-                    <a routerLink="/about-us/mission">Mission</a>
-                    <a routerLink="/about-us/vision">Vision</a>
-                    <a routerLink="/about-us/team">Our Team</a>
+                    <a routerLink="/about-us/mission">Education</a>
+                    <a routerLink="/about-us/vision">Video walls</a>
+                    <a routerLink="/about-us/team">Unified communications</a>
+                    <a routerLink="/about-us/mission">Meeting solutions</a>
+                    <a routerLink="/about-us/vision">Digital signage</a>
+                    <a routerLink="/about-us/team">Government projects</a>
+                    <a routerLink="/about-us/mission">Law firm technology</a>
+                    <a routerLink="/about-us/vision">Religious Organisations</a>
                 </div>
             </li> 
             <li class="dropdown">
-                <a href="#" class="dropbtn" (click)="toggleDropdown($event)">
-                    <span aria-hidden="true"></span>About us
+                <a href="#" class="dropbtn chevron" (click)="toggleDropdown($event)">
+                        <span aria-hidden="true"></span>Services <ng-icon name="heroChevronDown"></ng-icon>
                 </a>
 
                 <div class="dropdown-content">
-                    <a routerLink="/about-us/mission">Mission</a>
-                    <a routerLink="/about-us/vision">Vision</a>
-                    <a routerLink="/about-us/team">Our Team</a>
+                    <a routerLink="/about-us/mission">Support</a>
+                    <a routerLink="/about-us/vision">Collaboration</a>
+                    <a routerLink="/about-us/team">AV room design</a>
+                    <a routerLink="/about-us/team">Professional</a>
                 </div>
             </li> 
             <li class="dropdown">
-                <a href="#" class="dropbtn" (click)="toggleDropdown($event)">
-                    <span aria-hidden="true"></span>About us
+                <a href="#" class="dropbtn chevron" (click)="toggleDropdown($event)">
+                        <span aria-hidden="true"></span>Resources <ng-icon name="heroChevronDown"></ng-icon>
                 </a>
                 <div class="dropdown-content">
-                    <a routerLink="/about-us/mission">Mission</a>
-                    <a routerLink="/about-us/vision">Vision</a>
-                    <a routerLink="/about-us/team">Our Team</a>
-                    <a routerLink="/about-us/mission">Mission</a>
-                    <a routerLink="/about-us/vision">Vision</a>
-                    <a routerLink="/about-us/team">Our Team</a>
-                    <a routerLink="/about-us/mission">Mission</a>
-                    <a routerLink="/about-us/vision">Vision</a>
-                    <a routerLink="/about-us/team">Our Team</a>
+                    <a routerLink="/about-us/mission">Case study</a>
+                    <a routerLink="/about-us/vision">Gides</a>
+                    <a routerLink="/about-us/team">Analytics and intelligence</a>
+                    <a routerLink="/about-us/mission">Reference design</a>
+                    <a routerLink="/about-us/vision">Events</a>
                 </div>
             </li> 
             <li class="active">
                 <a routerLink="/services">
-                    <span aria-hidden="true"></span>Services
+                    <span aria-hidden="true"></span>Blog
                 </a>
             </li>
-       
-<!--         
-            <li class="active">
-                <a routerLink="/contact-us">
-                    <span aria-hidden="true"></span>Contact us
-                </a>
-            </li>
-            <li class="active primarymodes">
+            <li class="active primarymodes pl-2">
                 <a routerLink="/task">
-                    <span aria-hidden="true" class="black"> Plan</span>
+                    <span aria-hidden="true" class="black"> Shop</span>
                 </a>
-            </li> -->
+            </li> 
             <li class="active primarymodes">
                 <a routerLink="/rate">
-                    <span aria-hidden="true" class="black">Rate Us</span>
+                    <span aria-hidden="true" class="black">Contact us</span>
                 </a>
             </li>
         </ul>
