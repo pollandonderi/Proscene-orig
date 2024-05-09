@@ -1,5 +1,6 @@
 .main{
     height: 100svh;
+    font-family: thin;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
@@ -10,3 +11,11 @@
     font-size: large;
     padding-block: 8em;
 }
+.h2-oops {
+    font-size: 3.5em;
+    padding-bottom: .5rem;
+    padding-inline: 1rem;
+ }
+ .h3-oops{
+    font-size: 1.5em;
+ }

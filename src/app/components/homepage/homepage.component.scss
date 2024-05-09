@@ -3,13 +3,12 @@ img{
     border-radius: 10px;
 }
 .body-outer{
-    max-width: 1500px;
+    width: 100%;
 }
-.body{
-    padding-top:9.5em;
-}
+
 #background-video {
     width: 100%;
+    max-width: 1500px;
     height: 100svh;
     object-fit: cover;
     position: absolute;
@@ -28,12 +27,13 @@ img{
     padding-bottom: .5rem;
     padding-inline: 1rem;
  }
+ 
  .header-hero{
     color: $white;
+    padding-top: 27vh;
     font-weight: 900;
     font-size: clamp(1rem ,2.2rem, 4rem);
     text-transform: capitalize;
-    padding-bottom: 2rem;
 }
 .header-p{
     color: $white;
@@ -41,7 +41,8 @@ img{
     font-size: clamp(1rem ,.8rem, 1.5rem);
 }
 .solutions{
-    padding-top: 12em;
+    // padding-top: 12em;
+    margin-top: 65vh;
     font-family: thin;
 }
 .icons{
@@ -115,6 +116,10 @@ text-align: center;
 }
 
 @media (min-width:35em) and (max-width:59em) {
+    .header-hero{
+        color: $white;
+        padding-top: 30vh;
+    }
     .partner-images{
         grid-template-columns: repeat(3, 1fr);
     } 
@@ -126,13 +131,13 @@ text-align: center;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+    .solutions{
+        margin-top: 68vh;
+    }
 }
 @media (min-width:60em) {
-    .body{
-        padding-top: 9.5em;
-    }
     .header-hero{
-        margin-top: 4em;
+        padding-top: 45vh;
         width: 50%;
         font-size: 2.7em;
     }
@@ -148,8 +153,9 @@ text-align: center;
         gap: 1em;
     }
     .solutions{
-        padding-top: 5em;
+        margin-top: 38vh;
     }
+
     .partner-images{
         grid-template-columns: repeat(6, 1fr);
     }
@@ -171,3 +177,6 @@ text-align: center;
         grid-template-columns: repeat(4, 1fr);
     }
 }
+// @media (min-width:) {
+    
+// }
