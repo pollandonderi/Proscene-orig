@@ -1,6 +1,12 @@
 @import 'src/themes.scss';
+img{
+    border-radius: 10px;
+}
+.body-outer{
+    max-width: 1500px;
+}
 .body{
-    padding-top: 5.5em;
+    padding-top:9.5em;
 }
 #background-video {
     width: 100%;
@@ -17,7 +23,8 @@
  }
  .background-video-h2, .background-video-h1 {
     color: white;
-    font-weight: bold; text-align: left;
+    font-family:text-font;
+    text-align: left;
     padding-bottom: .5rem;
     padding-inline: 1rem;
  }
@@ -35,9 +42,13 @@
 }
 .solutions{
     padding-top: 12em;
+    font-family: thin;
 }
 .icons{
     font-size: 70px;
+}
+.icons1{
+    font-size: 40px;
 }
 .h3-solutions{
 font-size: clamp(1.8em ,2.5em, 2.5em);
@@ -57,9 +68,15 @@ font-size: clamp(1.8em ,2.5em, 2.5em);
     font-size: 1.2em;
   font-weight: 200;
   line-height: 1.4;
-  display: flex;
+text-align: center;
   color: #787878;
-  justify-content: center;
+}
+.p-solutions1{
+    font-size: 1.2em;
+  line-height: 1.4;
+  font-weight: 400;
+  color: #575555f5;
+  font-family: 'text'
 }
 .card{
     display: flex;
@@ -67,9 +84,53 @@ font-size: clamp(1.8em ,2.5em, 2.5em);
     justify-content: center;
     align-items: center;
 }
+.partner-section{
+    background-color: #f4f4f4d5;
+}
+.partner-icon{
+    max-width: 80px;
+}
+.partner-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.section1{
+    padding-inline: 1em;
+    text-align: center;
+}
+.picture-link{
+    color: #0a58ca;
+}
+.testament-p{
+    padding-block: 2em;
+    max-width: 600px;
+    text-align: center;
+    font-size: 1.56em;
+    font-family: thin;
+}
+.video-content{
+    padding-block: 2em;
+    max-width: 800px;
+    aspect-ratio: 1; 
+}
 
-
-@media (min-width:600px) {
+@media (min-width:35em) and (max-width:59em) {
+    .partner-images{
+        grid-template-columns: repeat(3, 1fr);
+    } 
+    .picture-section{
+        display: flex;
+        justify-content: center;
+    }
+    .use-cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width:60em) {
+    .body{
+        padding-top: 9.5em;
+    }
     .header-hero{
         margin-top: 4em;
         width: 50%;
@@ -87,6 +148,26 @@ font-size: clamp(1.8em ,2.5em, 2.5em);
         gap: 1em;
     }
     .solutions{
-        padding-top: 2em;
+        padding-top: 5em;
+    }
+    .partner-images{
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .picture-section{
+        display: flex;
+        justify-content: center;
+        padding-block: 3em;
+    }
+    .section1{
+        text-align: start;
+        width: 50%;
+    }
+    .center1{
+        justify-content: start;
+    }
+    .use-cards{
+        display: grid;
+        padding-block: 4em;
+        grid-template-columns: repeat(4, 1fr);
     }
 }

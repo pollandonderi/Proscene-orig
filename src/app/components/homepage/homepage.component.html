@@ -1,63 +1,239 @@
-<app-navbar></app-navbar>
-
-<div class="body">
-<div>
-    <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
-        <source src="/assets/back3.mp4" type="video/mp4">
-      </video>
-      <h1 class="background-video-h1 header-hero">Digitally empowering how we work, learn and live .</h1>
-      <h2 class="background-video-h2 header-p">We are Proscene, reshaping how people interact with the world. We deliver outstanding audio and video experiences in any space. Our Audio and Video solutions enhance your experiences whether you're working, learning, or at home..</h2>
-      <p class="text-left pt-3">
-        <button class="demo-button ml-2  pb-4">Connect with us!</button>
-      </p>
-</div>
-<div class="solutions">
-    <h3 class="h3-solutions center">Smart and easy-to-use Audio and visual<br>
-        solutions that drive outcomes
-    </h3>
-    <div class="card-container">
-        <div class="card">
-            <ng-icon name="heroCamera" class="icons"></ng-icon>
-            <h4 class="h4-solutions">Create</h4>
-            <p class="p-solutions">Easily capture video from
-                multiple cameras
-                presentations and
-                screens</p>
-        
-       <p></p>
+<div class="body-outer">
+    <app-navbar></app-navbar>
+    
+    <div class="body">
+        <div>
+            <video id="background-video" autoplay loop muted>
+                <source src="/assets/back3.mp4" type="video/mp4">
+            </video>
+            <h1 class="background-video-h1 header-hero">Digitally empowering how we work, learn and live .</h1>
+            <h2 class="background-video-h2 header-p">We are Proscene, reshaping how people interact with the world. We
+                deliver outstanding audio and video experiences in any space. Our Audio and Video solutions enhance your
+                experiences whether you're working, learning, or at home..</h2>
+            <p class="text-left pt-3">
+                <button class="demo-button ml-2" style="padding-bottom: 7px;">Connect with us!</button>
+            </p>
         </div>
-        <div class="card">
-            <ng-icon name="heroCamera" class="icons"></ng-icon>
-            <h4 class="h4-solutions">Create</h4>
-            <p class="p-solutions">Easily capture video from
-                multiple cameras
-                presentations and
-                screens</p>
-        
-       <p></p>
+        <div class="solutions">
+            <h3 class="h3-solutions center">Smart and easy-to-use Audio and visual<br>
+                solutions that drive outcomes
+            </h3>
+            <div class="card-container">
+                <div class="card">
+                    <ng-icon name="heroCamera" class="icons"></ng-icon>
+                    <h4 class="h4-solutions">Create</h4>
+                    <p class="p-solutions">
+                        Unleash Your Creativity:<br> Our state-of-the-art<br> platform empowers you
+                    </p>
+                </div>
+                <div class="card">
+                    <ng-icon name="heroUserGroup" class="icons"></ng-icon>
+                    <h4 class="h4-solutions">Share</h4>
+                    <p class="p-solutions">
+                        Seamlessly distribute your<br> videos across multiple channels,<br> reach your audience
+                    </p>
+                </div>
+                <div class="card">
+                    <ng-icon name="heroTv" class="icons"></ng-icon>
+                    <h4 class="h4-solutions">Watch</h4>
+                    <p class="p-solutions">
+                        Watch as stories unfold,<br> ideas come to life, and<br> creativity takes center stage.
+                    </p>
+    
+                </div>
+                <div class="card">
+                    <ng-icon name="heroFaceSmile" class="icons"></ng-icon>
+                    <h4 class="h4-solutions">Enjoy</h4>
+                    <p class="p-solutions">
+                        Enjoy the richness of <br>high-definition content, <br>meticulously crafted for you.
+                    </p>
+                </div>
+    
+            </div>
+            <div class="flex justify-center mt-9 mb-9">
+                <a class="demo-button ml-2" routerLink="/angular.json">See Proscene</a>
+            </div>
         </div>
-        <div class="card">
-            <ng-icon name="heroCamera" class="icons"></ng-icon>
-            <h4 class="h4-solutions">Create</h4>
-            <p class="p-solutions">Easily capture video from
-                multiple cameras
-                presentations and
-                screens</p>
-        
-       <p></p>
+        <div class="partner-section">
+            <h3 class="h3-solutions center pt-3 pb-4">Our Partners
+            </h3>
+            <p class="p-solutions1 p-3 center">We work with renowed brands to bring you the latest solutions to solve your
+                specific needs. </p>
+            <div class="partner-images pb-9">
+                <div class="center pt-7 pb-7">
+                    <img src="./assets/Lg.png" alt="" srcset="" class="w-100 partner-icon ">
+                </div>
+                <div class="center pt-7 pb-7">
+                    <img src="./assets/panasonic.png" alt="" srcset="" class="w-100 partner-icon">
+                </div>
+                <div class="center pt-7 pb-7">
+                    <img src="./assets/Optoma.png" alt=center pt-7 pb-7 srcset="" class="w-100 partner-icon">
+                </div>
+                <div class="center pt-7 pb-7">
+                    <img src="./assets/lifesize.png" alt="" srcset="" class="w-100 partner-icon">
+                </div>
+                <div class="center pt-7 pb-7">
+                    <img src="./assets/samsung.png" alt="" srcset="" class="w-100 partner-icon">
+                </div>
+                <div class="center pt-7 pb-7">
+                    <img src="./assets/samsung.png" alt="" srcset="" class="w-100 partner-icon">
+                </div>
+                <div class="center pt-7 pb-7">
+                    <img src="./assets/samsung.png" alt="" srcset="" class="w-100 partner-icon">
+                </div>
+    
+                <div class="center pt-7 pb-7">
+                    <img src="./assets/Lg.png" alt="" srcset="" class="w-100 partner-icon">
+                </div>
+                <div class="center pt-7 pb-7">
+                    <img src="./assets/panasonic.png" alt="" srcset="" class="w-100 partner-icon">
+                </div>
+                <div class="center pt-7 pb-7">
+                    <img src="./assets/panasonic.png" alt="" srcset="" class="w-100 partner-icon">
+                </div>
+                <div class="center pt-7 pb-7">
+                    <img src="./assets/Optoma.png" alt="" srcset="" class="w-100 partner-icon">
+                </div>
+                <div class="center pt-7 pb-7">
+                    <img src="./assets/lifesize.png" alt="" srcset="" class="w-100 partner-icon">
+                </div>
+            </div>
         </div>
-        <div class="card">
-            <ng-icon name="heroCamera" class="icons"></ng-icon>
-            <h4 class="h4-solutions">Create</h4>
-            <p class="p-solutions">Easily capture video from
-                multiple cameras
-                presentations and
-                screens</p>
-        
-       <p></p>
+        <div class="picture-section">
+            <div class="section1 flex justify-center items-center">
+                <div>
+                    <h3 class="h3-solutions pt-3 pb-4">Simplify your video workflows
+                    </h3>
+                    <p class="p-solutions1 pt2 pb-4">Ease of use is a central tenet of Proscene. We believe it should be
+                        easy to
+                        get started, easy to integrate, and simple to switch from existing systems and processes. </p>
+                    <div class=" center center1"><a routerLink="solutions" class="picture-link pb-9">Our Expertise ></a></div>
+                </div>
+            </div>
+            <div class="section-image center p-3">
+                <img src="/assets/Ourexpertise1.png" alt="" srcset="">
+            </div>
         </div>
+        <div class="picture-section mt-9" style="background-color: #f4f4f4d5;">
+            <div class="section-image center p-3">
+                <img src="/assets/AV.png" alt="" srcset="">
+            </div>
+            <div class="section1 flex justify-center items-center">
+                <div>
+                    <h3 class="h3-solutions pt-3 pb-4">Seamless integration with the tools you already use.
+                    </h3>
+                    <p class="p-solutions1 pt2 pb-4"> Proscene’s interoperability with popular video
+                        conferencing solutions allows for seamless communication. Connect with Learning Management
+                        Systems for the complete learning experience. Record meetings from Zoom, Teams, and Webex. </p>
+                    <div class=" center center1"><a routerLink="solutions" class="picture-link pb-9">Learn More ></a></div>
+                </div>
+            </div>
+    
+        </div>
+        <div class="picture-section mt-9">
+    
+            <div class="section1 flex justify-center items-center">
+                <div>
+                    <h3 class="h3-solutions pt-3 pb-4">Seamless integration with the tools you already use.
+                    </h3>
+                    <p class="p-solutions1 pt2 pb-4"> Proscene’s interoperability with popular video
+                        conferencing solutions allows for seamless communication. Connect with Learning Management
+                        Systems for the complete learning experience. Record meetings from Zoom, Teams, and Webex. </p>
+                    <div class=" center center1"><a routerLink="solutions" class="picture-link pb-9">Learn More ></a></div>
+                </div>
+            </div>
+            <div class="section-image center p-3">
+                <img src="/assets/university.jpg" alt="" srcset="">
+            </div>
+    
+        </div>
+        <div class="picture-section mt-9" style="background-color: #f4f4f4d5;">
+            <div class="section-image center p-3">
+                <img src="/assets/collaboration.jpg" alt="" srcset="" style=" width: 100%; max-width: 600px;">
+            </div>
+    
+            <div class="section1 flex justify-center items-center">
+                <div>
+                    <h3 class="h3-solutions pt-3 pb-4">Effortless collaboration with your favorite platforms.
+                    </h3>
+                    <p class="p-solutions1 pt2 pb-4"> Integrate with Content Management Systems for a holistic content experience. Archive meetings from Skype, Google Meet, and GoToMeeting
+                        Our platform offers the ability to disseminate organizational knowledge with solutions that are intuitive, comprehensive, and widely accepted.. </p>
+                    <div class=" center center1"><a routerLink="solutions" class="picture-link pb-9">Learn More ></a></div>
+                </div>
+            </div>
+        </div>
+        <!-- contains repetitive content is to be corrected -->
+        <div class="use">
+            <h3 class="h3-solutions pt-9 pb-4 center">How Organizations Use Proscene.</h3>
+            <div class="use-cards">
+                <div class="use-card1 center flex-col">
+                    <ng-icon name="heroLockClosed" class="icons"></ng-icon>
+                    <p class="p-solutions1 pt2 pb-4"> Secure video library</p>
+                </div>
+                <div class="use-card1 center flex-col">
+                    <ng-icon name="heroBolt" class="icons"></ng-icon>
+                    <p class="p-solutions1 pt2 pb-4"> Meeting intelligence</p>
+                </div>
+                <div class="use-card1 center flex-col">
+                    <ng-icon name="heroUserGroup" class="icons"></ng-icon>
+                    <p class="p-solutions1 pt2 pb-4"> Knowledge sharing</p>
+                </div>
+                <div class="use-card1 center flex-col">
+                    <ng-icon name="heroVideoCamera" class="icons"></ng-icon>
+                    <p class="p-solutions1 pt2 pb-4"> Video training</p>
+                </div>
+                <div class="use-card1 center flex-col">
+                    <ng-icon name="heroServerStack" class="icons"></ng-icon>
+                    <p class="p-solutions1 pt2 pb-4"> Lecture capture</p>
+                </div>
+                <div class="use-card1 center flex-col">
+                    <ng-icon name="heroCheckBadge" class="icons"></ng-icon>
+                    <p class="p-solutions1 pt2 pb-4"> Accessibility</p>
+                </div>
+                <div class="use-card1 center flex-col">
+                    <ng-icon name="heroFingerPrint" class="icons"></ng-icon>
+                    <p class="p-solutions1 pt2 pb-4"> Video Content Management</p>
+                </div>
+                <div class="use-card1 center flex-col">
+                    <ng-icon name="heroClipboardDocumentCheck" class="icons"></ng-icon>
+                    <p class="p-solutions1 pt2 pb-4"> Secure video library</p>
+                </div>
+            </div>
+        </div>
+        <div class="testament-section center flex-col mt-9 mb-9 p-9" style="background-color: #f4f4f4d5;">
+            <p class="testament-p">" Our mission is to design and implement custom audio visual solutions that help organizations communicate, collaborate, and engage more effectively, while providing exceptional service and support to our clients"</p>
+            <p>Wilkins Michira</p>
+            <ng-icon name="heroCheck" class="icons1"></ng-icon>
+    
+        </div>
+        <div class="center">
+            <iframe class="video-content" width="100%" src="https://www.youtube.com/embed/Rd3Mbl9d1SA"
+                    title="What Does An Audio Visual Technician Do?" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+        </div>
+        <div class="testament-section center flex-col mt-9 mb-9 p-9" style="background-color: #f4f4f4d5;">
+            <p class="testament-p">" Experiencing the services of this audio visual company has been truly transformative. Their custom solutions have revolutionized our communication and collaboration processes, making them more efficient and effective. The exceptional service and support they provide is simply unparalleled. We couldn’t be more satisfied!"</p>
+            <p>Joy Dasi</p>
+            <ng-icon name="heroCheck" class="icons1"></ng-icon>
+        </div>
+        <div class="blog-home">
+            <h3 class="h3-solutions pt-3 pb-4 text-center">Industry analysts agree:<br>
+                Proscene is a leader in enterprise solutions .</h3>
+                <p class="p-solutions1 pt-9 pb-4 text-center">Click below for complimentary copies of the latest video platform market research.</p>
+                <div class="flex justify-center mt-6 mb-6">
+                    <a class="demo-button mt-6 mb-6 pb-2" style="padding-bottom: 7px;" routerLink="/blog">Discover More</a>
+                </div>
+        </div>
+        <div class="picture-section mt-9 center flex-col" style="background-color: #f4f4f4d5;">
+            <h3 class="h3-solutions pt-3 pb-4 text-center">See Proscene.</h3>
+                <p class="p-solutions1 pt-9 pb-4 text-center" style="max-width: 800px;">Want to see Proscene for yourself? Just complete the form below. Our team will answer your questions, share a quick demo, and set you up with a free trial of our video platform.</p>
+                <span>You can aso call us on 0724640020</span>
+                
+        </div>
+        <div style="background-color: #f4f4f4d5;" class="pb-12">
+            <app-form></app-form>
+        </div>
+        <app-footer></app-footer>
     </div>
-</div>
-
-
 </div>

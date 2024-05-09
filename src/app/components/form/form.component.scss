@@ -1,0 +1,43 @@
+@import 'src/themes.scss';
+.login-main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+.logo{
+    padding-bottom: .6em;
+}
+:is(.form-container){
+    background-color: $yellowish;
+    width: calc(min(90%, 600px));
+    border-radius: 15px;
+    color:#0a0a22 ;
+}
+:is(input){
+    padding-block: .6em;
+    outline: transparent;
+    border-radius: 10px;
+
+}
+:is(button){
+    background-color: $the-blue;
+    padding-block: .6em;
+    outline: transparent;
+    border-radius: 10px;
+    margin-top: .6rem;
+    color: $yellowish;
+}
+:is(button:hover){
+    background-color: #fff;
+    color: #0a0a22;
+}
+.alert{
+    color: #0a0a22;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}

@@ -1,0 +1,23 @@
+@import 'src/themes.scss';
+.main-container{
+    background-color:$the-blue ;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: grid;
+    color: white;
+}
+.h3-solutions{
+    font-size: clamp(1.2em ,1.5em, 2.5em);
+      line-height: 3rem;
+      font-weight: 300;
+    }
+@media (min-width:35em) and (max-width:59em) {
+    .main-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width:60em) {
+    .main-container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

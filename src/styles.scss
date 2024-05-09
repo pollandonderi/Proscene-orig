@@ -2,15 +2,22 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 @import 'themes.scss';
+@font-face {
+    font-family: 'thin';
+    src: url('/assets/fonts/myriad-set-pro-thin-webfont.ttf');
+  }
+@font-face {
+    font-family: 'text-font';
+    src: url('/assets/fonts/myriad-set-pro_text-webfont.ttf');
+  }
 *,
 ::before,
 ::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Playfair Display', serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'Ubuntu', sans-serif;
+    // display: flex;
+    // justify-content: center;
 }
 .flex{                       
     display: flex;
@@ -63,15 +70,7 @@ font-family: 'Ubuntu', sans-serif;
     border-radius: 15px;
     box-shadow: 0 0 0 6px $white;
 }
-.border-yellow{
-    border: 2px dotted $yellowish;
-}
-.border-blue{
-    border: 2px dotted $the-blue;
-}
-.border-cyan{
-    border: 2px dotted $light-bluish;
-}
+
 
 .headings-h3 {
     font-size: 1.9rem;
@@ -81,33 +80,26 @@ font-family: 'Ubuntu', sans-serif;
     display: inline;
   }
   .demo-button{
-    Border: 1px solid #bf2525;
+    Border: 1px solid #fff;
   padding: 4px 8px;
   background-color: #0a0a22;
-  color: #bf2525;
+  color: #fff;
   border-radius: 30px;
+  transition: all 0.5s ease;
+  }
+  .demo-button:hover{
+    background-color: #bf2525;
+    color: #0a0a22;
   }
 @media (min-width:35em) and (max-width:60em) {
-    .miniheadings{
-        font-size: 3rem;
-        text-decoration: none;
-        background-image: linear-gradient($pinkish, $pinkish);
-    background-position: bottom;
-    background-size: (100% 30%);
-    background-repeat: no-repeat;
-    }
+
 }
 
 
 
 @media (min-width : 60em) {
-
-    .miniheadings{
-        font-size: 3.4rem;
-        text-decoration: none;
-        background-image: linear-gradient($pinkish, $pinkish);
-    background-position: bottom;
-    background-size: (100% 30%);
-    background-repeat: no-repeat;
+    .demo-button{
+        padding: 5px 20px;
     }
+  
 }

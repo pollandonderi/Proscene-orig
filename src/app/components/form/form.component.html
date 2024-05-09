@@ -1,0 +1,69 @@
+<div class="login-main-container">
+    <div class="form-container">
+      <form class="form" [formGroup]="passwordForm" (ngSubmit)="submit()">
+          <label for="">Your Name</label>
+          <input type="text" formControlName="name" id="Yourname" />
+          <div
+            *ngIf="f['name'].touched && f['name'].invalid"
+            class="alert alert-danger"
+          >
+            <div *ngIf="f['name'].errors && f['name'].errors['required']">
+              Name is required.
+            </div>
+            <div *ngIf="f['name'].errors && f['name'].errors['minlength']">
+              Name should be 3 character.
+            </div>
+          </div>
+          <label for="">Your email</label>
+          <input type="email" name="" id="" formControlName="email" />
+          <div
+            *ngIf="f['email'].touched && f['email'].invalid"
+            class="alert alert-danger"
+          >
+            <div *ngIf="f['email'].errors && f['email'].errors['required']">
+              Email is required.
+            </div>
+  
+            <div *ngIf="f['email'].errors && f['email'].errors['email']">
+              Please, enter valid email address.
+            </div>
+          </div>
+          <label for="">Your Phone number</label>
+          <input type="number" name="" id="" formControlName="phonenumber" />
+          <div
+            *ngIf="f['phonenumber'].touched && f['phonenumber'].invalid"
+            class="alert alert-danger"
+          >
+            <div *ngIf="f['phonenumber'].errors && f['phonenumber'].errors['required']">
+              Phone Number is required.
+            </div>
+  
+            <div *ngIf="f['phone-number'].errors && f['phone-number'].errors['phone-number']">
+              Please, enter valid phone number.
+            </div>
+          </div>
+          <label for="">What can we do for you today?</label>
+          <input type="text" name="name" id="" formControlName="" />
+          <div
+            *ngIf="f['name'].touched && f['name'].invalid"
+            class="alert alert-danger"
+          >
+            <div *ngIf="f['name'].errors && f['name'].errors['required']">
+              answeris required
+            </div>
+          </div>
+          <label for="">Would you like a callback?</label>
+          <input type="text" name="name" id="" formControlName="" />
+          <div
+            *ngIf="f['name'].touched && f['name'].invalid"
+            class="alert alert-danger"
+          >
+            <div *ngIf="f['name'].errors && f['name'].errors['required']">
+              answeris required
+            </div>
+          </div>
+        <button type="submit">submit</button>
+      </form>
+    </div>
+  </div>
+  
