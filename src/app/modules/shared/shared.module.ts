@@ -6,6 +6,8 @@ import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from 'src/app/app-routing.module';
 import { NgIconsModule } from '@ng-icons/core';
 import { heroBars3CenterLeft, heroChevronDown} from '@ng-icons/heroicons/outline';
+import { ContactformComponent } from './contactform/contactform.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -13,15 +15,18 @@ import { heroBars3CenterLeft, heroChevronDown} from '@ng-icons/heroicons/outline
   declarations: [
     NavbarComponent,
     PageNotFoundComponent,
-    FooterComponent
+    FooterComponent,
+    ContactformComponent
   ],
   exports: [
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    ContactformComponent
   ],
   imports: [
     CommonModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     NgIconsModule.withIcons({heroChevronDown, heroBars3CenterLeft,  }),
   ]
 })

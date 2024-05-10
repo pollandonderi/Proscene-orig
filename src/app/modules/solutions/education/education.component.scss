@@ -46,7 +46,46 @@
     font-size: clamp(1rem, 5vw + 0.5rem, 1.1rem) ;
   
 }
-
+.card1{
+    max-width:300px ;
+    border-radius: 15px;
+    margin: 0 auto;
+    background-color: $grey;
+}
+.image{
+    background-size: cover;
+    background-repeat: no-repeat;
+    aspect-ratio: 1;
+    border-radius: 15px;
+    width:100%;
+}
+.imageone{
+    background-image: url('/assets/interactive.jpeg');
+}
+.imagetwo{
+    background-image: url('/assets/Distancelearning.jpg');
+}
+.imagethree{
+    background-image: url('/assets/visual.jpg');
+}
+.imagefour{
+    background-image: url('/assets/accessibility.png');
+}
+h5{
+    font-weight: 800;
+}
+.cards-solutions{
+    padding: 1em;
+}
+.solutions{
+    display: grid;
+}
+@media (min-width:35em) and (max-width:59em) {
+    .solutions{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 @media (min-width:60em) {
     .hero-image{
@@ -65,5 +104,8 @@
     .offers-p{
         width: 50%;
         max-width: 800px;
+    }
+    .solutions{
+        grid-template-columns: repeat(4, 1fr);
     }
 }
