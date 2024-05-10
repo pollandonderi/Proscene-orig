@@ -27,6 +27,7 @@ import { SolutionsModule } from './modules/solutions/solutions.module';
     ReactiveFormsModule,
     NgIconsModule.withIcons({heroCamera,heroPhone,heroChatBubbleLeftRight, heroMapPin, heroUserGroup, heroTv,heroServerStack,heroCheckBadge,heroFingerPrint,heroClipboardDocumentCheck, heroFaceSmile,heroVideoCamera, heroChevronRight,heroLockClosed, heroBolt, heroCheck}),
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })

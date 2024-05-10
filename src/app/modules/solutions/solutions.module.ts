@@ -9,6 +9,8 @@ import { GovernmentComponent } from './government/government.component';
 import { LawComponent } from './law/law.component';
 import { ReligiousComponent } from './religious/religious.component';
 import { SharedModule } from '../shared/shared.module';
+import { FormComponent } from 'src/app/components/form/form.component';
+
 
 
 
@@ -21,7 +23,8 @@ import { SharedModule } from '../shared/shared.module';
     DigitalComponent,
     GovernmentComponent,
     LawComponent,
-    ReligiousComponent
+    ReligiousComponent,
+    
   ],
   imports: [
     CommonModule,
