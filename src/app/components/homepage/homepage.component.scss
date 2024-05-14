@@ -32,7 +32,7 @@ img{
     color: $white;
     padding-top: 27vh;
     font-weight: 900;
-    font-size: clamp(1rem ,2.2rem, 4rem);
+    font-size: clamp(2.5rem, 10vw + 0.5rem, 3.5rem);
     text-transform: capitalize;
 }
 .header-p{
@@ -139,7 +139,6 @@ text-align: center;
     .header-hero{
         padding-top: 45vh;
         width: 50%;
-        font-size: 2.7em;
     }
     .header-p{
         width: 50%;
