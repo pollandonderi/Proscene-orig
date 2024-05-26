@@ -4,11 +4,15 @@
 @import 'themes.scss';
 @font-face {
     font-family: 'thin';
-    src: url('/assets/fonts/myriad-set-pro-thin-webfont.ttf');
+    src: url('/assets/fonts/CiscoSansExtraLight.ttf');
   }
 @font-face {
-    font-family: 'text-font';
-    src: url('/assets/fonts/myriad-set-pro_text-webfont.ttf');
+    font-family: 'text';
+    src: url('/assets/fonts/CiscoSans.ttf');
+  }
+@font-face {
+    font-family: 'text-thin';
+    src: url('/assets/fonts/CiscoSansExtraLight.ttf');
   }
 *,
 ::before,
@@ -39,23 +43,19 @@
 }
   .demo-button1{
     border: 1px solid #fff;
-  padding: 8px 25px;
-  text-transform: capitalize;
-  font-size: small;
+    padding: 4px 21px;
+  text-transform: uppercase;
   background-color: #0a0a22;
-  font-weight: 600;
   color: #fff;
   border-radius: 30px;
   transition: all 0.5s ease;
   }
   .demo-button{
     border: 1px solid #fff;
-  padding: 8px 25px;
+  padding: 4px 21px;
   text-transform: capitalize;
-  font-size: small;
   background-color: #0a0a22;
   color: #fff;
-  font-weight: 600;
   border-radius: 30px;
   transition: all 0.5s ease;
   }
@@ -66,6 +66,13 @@
   a{
     cursor: pointer;
   }
+ 
+.p-solutions{
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.4;
+  color: $text;
+}
 @media (min-width:35em) and (max-width:60em) {
 
 }
@@ -74,7 +81,7 @@
 
 @media (min-width : 60em) {
     .demo-button{
-        padding: 13px 33px;
+        padding: 7px 23px;
     }
   
 }

@@ -19,40 +19,90 @@
                         <span aria-hidden="true"></span>Solutions <ng-icon name="heroChevronDown"></ng-icon>
                 </a>
                 <div class="dropdown-content">
-                    <a routerLink="/education">Education</a>
-                    <a routerLink="/about-us/vision">Video walls</a>
-                    <a routerLink="/about-us/team">Unified communications</a>
-                    <a routerLink="/about-us/mission">Meeting solutions</a>
-                    <a routerLink="/about-us/vision">Digital signage</a>
-                    <a routerLink="/about-us/team">Government projects</a>
-                    <a routerLink="/about-us/mission">Law firm technology</a>
-                    <a routerLink="/about-us/vision">Religious Organisations</a>
+                    <div class="drop-container">
+                        <div class="dropdown-content-a">
+                            <a routerLink="/education">Education</a>
+                            <a routerLink="/about-us/vision">Video walls</a>
+                            <a routerLink="/about-us/team">Unified communications</a>
+                            <a routerLink="/about-us/mission">Meeting solutions</a>
+                            <a routerLink="/about-us/vision">Digital signage</a>
+                            <a routerLink="/about-us/team">Government projects</a>
+                            <a routerLink="/about-us/mission">Law firm technology</a>
+                            <a routerLink="/about-us/vision">Religious Organisations</a>
+                        </div>
+                        <div class="card-nav p-2">
+                            <a class="dropbtn chevron" (click)="toggleDropdown($event)">
+                                <div class="x-container"><ng-icon class="x" name="heroXCircle"></ng-icon></div>
+                            </a>
+                            <div class="card-nav-content p-2">
+                                <div class="image-nav-card pb-2"></div>
+                                <div class="words-nav-card">
+                                    <h3 class="pb-2 pt-2">Partner information</h3>
+                                    <p class="pb-2" >Whether you need help from a us or would like to become a partner, we offer options to fit your business</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </li> 
             <li class="dropdown">
-                <a href="#" class="dropbtn chevron" (click)="toggleDropdown($event)">
+                <a class="dropbtn chevron" (click)="toggleDropdown($event)">
                         <span aria-hidden="true"></span>Services <ng-icon name="heroChevronDown"></ng-icon>
                 </a>
-
                 <div class="dropdown-content">
-                    <a routerLink="/about-us/mission">Support</a>
+                    <div class="drop-container">
+                        <div class="dropdown-content-a">
+                            <a routerLink="/about-us/mission">Support</a>
                     <a routerLink="/about-us/vision">Collaboration</a>
                     <a routerLink="/about-us/team">AV room design</a>
                     <a routerLink="/about-us/team">Professional</a>
+                        </div>
+                        <div class="card-nav p-2">
+                            <a class="dropbtn chevron" (click)="toggleDropdown($event)">
+                                <div class="x-container"><ng-icon class="x" name="heroXCircle"></ng-icon></div>
+                            </a>
+                            <div class="card-nav-content p-2">
+                                <div class="image-nav-card pb-2"></div>
+                                <div class="words-nav-card">
+                                    <h3 class="pb-2 pt-2">Partner information</h3>
+                                    <p class="pb-2" >Whether you need help from a us or would like to become a partner, we offer options to fit your business</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </li> 
             <li class="dropdown">
-                <a href="#" class="dropbtn chevron" (click)="toggleDropdown($event)">
+                <a class="dropbtn chevron" (click)="toggleDropdown($event)">
                         <span aria-hidden="true"></span>Resources <ng-icon name="heroChevronDown"></ng-icon>
                 </a>
                 <div class="dropdown-content">
-                    <a routerLink="/about-us/mission">Case study</a>
-                    <a routerLink="/about-us/vision">Gides</a>
-                    <a routerLink="/about-us/team">Analytics and intelligence</a>
-                    <a routerLink="/about-us/mission">Reference design</a>
-                    <a routerLink="/about-us/vision">Events</a>
+                    <div class="drop-container">
+                        <div class="dropdown-content-a">
+                            <a routerLink="/about-us/mission">Case study</a>
+                            <a routerLink="/about-us/vision">Gides</a>
+                            <a routerLink="/about-us/team">Analytics and intelligence</a>
+                            <a routerLink="/about-us/mission">Reference design</a>
+                            <a routerLink="/about-us/vision">Events</a>
+                        </div>
+                        <div class="card-nav p-2">
+                            <a class="dropbtn chevron" (click)="toggleDropdown($event)">
+                                <div class="x-container"><ng-icon class="x" name="heroXCircle"></ng-icon></div>
+                            </a>
+                            <div class="card-nav-content p-2">
+                                <div class="image-nav-card pb-2"></div>
+                                <div class="words-nav-card">
+                                    <h3 class="pb-2 pt-2">Partner information</h3>
+                                    <p class="pb-2" >Whether you need help from a us or would like to become a partner, we offer options to fit your business</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
-            </li> 
+            </li>
             <li class="active">
                 <a routerLink="/services">
                     <span aria-hidden="true"></span>Blog
