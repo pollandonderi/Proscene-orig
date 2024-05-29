@@ -1,6 +1,11 @@
 @import 'src/themes.scss';
-.main-container{
+$gap-big:2em;
+$gap-small:1em;
+.main{
     background-color:$the-blue ;
+}
+.main-container{
+   
     max-width: 1500px;
     margin: 0 auto;
     display: grid;
@@ -10,14 +15,57 @@
     font-size: clamp(1.2em ,1.5em, 2.5em);
       line-height: 3rem;
       font-weight: 300;
-    }
+}
+.bottom{
+    display: flex;
+    padding-top: 2em;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top: .5px solid grey;
+    padding-inline: 2em;
+    color: #ffff;
+}
+.hide{
+    display: none;
+}
+
 @media (min-width:35em) and (max-width:59em) {
+
     .main-container{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .bottom{
+        flex-direction: row;
+        gap: $gap-small;
+        padding-block: 3em;
+    }
+    .bottom-links{
+        display: flex;
+        gap: $gap-small;
+    }
+    .hide{
+        display: block;
     }
 }
 @media (min-width:60em) {
     .main-container{
         grid-template-columns: repeat(4, 1fr);
+    }
+    .bottom{
+        flex-direction: row;
+        justify-content: space-between;
+        padding-block: 3em;
+    }
+    .bottom-links{
+        display: flex;
+        gap: $gap-big;
+    }
+    .bottom-links>*a::after{
+        content: '|';
+        margin-left: 0.9em;
+    }
+    .hide{
+        display: block;
     }
 }
