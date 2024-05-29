@@ -2,26 +2,14 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 @import 'themes.scss';
-@font-face {
-    font-family: 'thin';
-    src: url('/assets/fonts/CiscoSansExtraLight.ttf');
-  }
-@font-face {
-    font-family: 'text';
-    src: url('/assets/fonts/CiscoSans.ttf');
-  }
-@font-face {
-    font-family: 'text-thin';
-    src: url('/assets/fonts/CiscoSansExtraLight.ttf');
-  }
 *,
 ::before,
 ::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    // display: flex;
-    // justify-content: center;
+    font-family: "Noto Sans", sans-serif;
+
 }
 .flex{                       
     display: flex;
@@ -32,6 +20,11 @@
         text-align: center;
         justify-content: center;align-items: center;
         display: flex;
+}
+.header-p{
+  color: $white;
+  padding-bottom: 1rem;
+  font-size: clamp(1rem ,.8rem, 1.5rem);
 }
 .miniheadings{
     text-align:center;
