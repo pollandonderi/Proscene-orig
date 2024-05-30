@@ -67,6 +67,7 @@ span {
     padding-top: 1em;
     gap: 1rem;
     border-top: 1px solid rgba(128, 128, 128, 0.281);
+    padding-bottom: 1em;
 }
 .flex-3{
     display: flex;
@@ -75,11 +76,28 @@ span {
     padding-top: 2rem;
   padding-inline: 1em;
 }
+.main-container{
+    display: grid;
+    padding-inline: 1em;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+}
+.card-grid-img{
+    background-image: url('https://news.microsoft.com/wp-content/uploads/prod/sites/133/2020/11/123-960x640.jpg');
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
 
 
 @media (min-width:35em) and (max-width:59em) {
     .first{
         padding-inline: 3em;
+    }
+    .main-container{
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1em;
     }
 }
 
@@ -95,5 +113,12 @@ span {
     }
     .flex-3{
         padding-top: 0;
+    }
+    .main-container{
+        grid-template-columns: repeat(4, 1fr);
+        padding-top: 3rem;
+        grid-gap: 1em;
+        margin: 0 auto;
+        max-width: min(90%, 1000px);
     }
 }
