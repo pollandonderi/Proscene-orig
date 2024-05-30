@@ -9,7 +9,6 @@ import { GovernmentComponent } from './government/government.component';
 import { LawComponent } from './law/law.component';
 import { ReligiousComponent } from './religious/religious.component';
 import { SharedModule } from '../shared/shared.module';
-import { FormComponent } from 'src/app/components/form/form.component';
 import { NgIconsModule } from '@ng-icons/core';
 import { heroArrowDown } from '@ng-icons/heroicons/outline';
 

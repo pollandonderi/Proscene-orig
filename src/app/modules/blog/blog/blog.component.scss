@@ -1,0 +1,99 @@
+@import '/src/themes.scss';
+$card-date: clamp(.9rem, 0.4661rem + 0.1695vw, 1.125rem);
+$smallest-h2:clamp(1.2656rem, 1.0692rem + 0.9822vw, 1.99rem);
+$smallest-h3:clamp(1.125rem, 1.0243rem + 0.5034vw, 1.4963rem);
+$medium-h:clamp(1.4238rem, 1.0921rem + 1.6585vw, 2.6469rem);
+$biggest-h:clamp(1.8019rem, 1.0209rem + 3.9051vw, 4.6819rem);
+.header{
+    height: 100dvh;
+    height: 100%;
+    color: #f3f3fe;
+    background-color: $the-blue;
+}
+.blog-land{
+    padding-block: 7vh;
+    h1{
+        font-size: $biggest-h;
+        padding-block: 2rem;
+    }  
+}
+span {
+    color: $yellowish;
+}
+.first{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 1em;
+    padding-bottom: 2rem;
+    h2{
+        font-size:$smallest-h2 ;
+    }
+}
+.big-card{
+    padding-inline: 1em;
+    max-width: 380px;
+}
+.big-card-img{
+    background-image: url('https://storage.googleapis.com/blogs-images/ciscoblogs/1/2024/05/2024-GNT-Report-Blog-Cover-Feature-Image-600x200.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    max-width: 330px;
+    aspect-ratio: 13/5;
+    background-size: cover;
+}
+.big-card-words{
+    .big-card-words-h{
+        font-size: $smallest-h3;
+    }
+}
+.bigcard-words-p{
+    font-size: $card-date;
+    color: $text;
+}
+.date{
+    font-size: $card-date;
+    color: $text;
+}
+.image1{
+    background-image:url('https://news.microsoft.com/wp-content/uploads/prod/sites/133/2020/11/123-960x640.jpg') ;
+    width: 100%;
+    // aspect-ratio: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card1{
+    display: flex;
+    padding-top: 1em;
+    gap: 1rem;
+    border-top: 1px solid rgba(128, 128, 128, 0.281);
+}
+.flex-3{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 2rem;
+  padding-inline: 1em;
+}
+
+
+@media (min-width:35em) and (max-width:59em) {
+    .first{
+        padding-inline: 3em;
+    }
+}
+
+@media (min-width:60em) {
+    .first{
+        padding-inline: 4em;
+    }
+    .section1{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: min(70%, 1000px);
+        margin: 0 auto;
+    }
+    .flex-3{
+        padding-top: 0;
+    }
+}

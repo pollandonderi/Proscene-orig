@@ -9,6 +9,7 @@ import { heroBolt, heroCamera, heroChatBubbleLeftRight, heroCheck, heroCheckBadg
 import { FormComponent } from './components/form/form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SolutionsModule } from './modules/solutions/solutions.module';
+import { BlogModule } from './modules/blog/blog.module';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { SolutionsModule } from './modules/solutions/solutions.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BlogModule,
     SharedModule,
     SolutionsModule,
     ReactiveFormsModule,

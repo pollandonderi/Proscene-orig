@@ -21,7 +21,8 @@ import { ReactiveFormsModule } from '@angular/forms';
   exports: [
     NavbarComponent,
     FooterComponent,
-    ContactformComponent
+    ContactformComponent,
+
   ],
   imports: [
     CommonModule,
