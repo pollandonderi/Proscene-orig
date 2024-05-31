@@ -1,4 +1,11 @@
 @import 'src/themes.scss';
+$smallest-h2:clamp(1.2656rem, 1.0692rem + 0.9822vw, 1.99rem);
+$smallest-h3: clamp(1rem, 1.0661rem + 0.5695vw, 1.65rem);
+main{
+    width: 100%;
+    background-color: $the-blue;
+    padding-block: 3rem;
+}
 .login-main-container{
     display: flex;
     justify-content: center;
@@ -10,7 +17,7 @@
     padding-bottom: .6em;
 }
 :is(.form-container){
-    background-color: $yellowish;
+    background-color: #f3f3f3;
     width: calc(min(90%, 600px));
     border-radius: 15px;
     color:#0a0a22 ;
@@ -41,3 +48,45 @@
     flex-direction: column;
     padding: 1em;
 }
+.sub-container{
+    color: #fff;
+}
+.sub-container-h2{
+    font-size: $smallest-h2;
+    font-weight: 600;
+}
+.icons-1{
+    font-size: clamp(1.2656rem, 1.0692rem + 0.9822vw, 1.59rem);
+    color: $yellowish;
+}
+.icons{
+    font-size: $smallest-h2;
+    color: $yellowish;
+}
+h3{
+    font-size: $smallest-h3;
+    font-weight: 700;
+    background-image: linear-gradient(to right,$yellowish 50%,transparent 50%);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 205% .2rem;
+    display: inline-block;
+    overflow: hidden;
+}
+h3:hover{
+    background-position: 0 100%;
+  transition: all .25s linear;
+}
+.alert{
+    color: red;
+}
+
+
+
+@media (min-width:45em) {
+    .main{
+        display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
