@@ -1,0 +1,153 @@
+<app-navbar></app-navbar>
+<main class="main">
+    <div>
+      <h2 class="sub-container-h2 pl-9 pb-9" style="color: white;">Talk to a sales expert</h2>
+      <div class="login-main-container">
+          <div class="form-container">
+            <form class="form" [formGroup]="passwordForm" (ngSubmit)="submit()">
+                <label for="">Your Name</label>
+                <input type="text" formControlName="name" id="Yourname" />
+                <div
+                  *ngIf="f['name'].touched && f['name'].invalid"
+                  class="alert alert-danger"
+                >
+                  <div *ngIf="f['name'].errors && f['name'].errors['required']">
+                    Name is required.
+                  </div>
+                  <div *ngIf="f['name'].errors && f['name'].errors['minlength']">
+                    Name should be 3 character.
+                  </div>
+                </div>
+                <label for="">Your email</label>
+                <input type="email" name="" id="" formControlName="email" />
+                <div
+                  *ngIf="f['email'].touched && f['email'].invalid"
+                  class="alert alert-danger"
+                >
+                  <div *ngIf="f['email'].errors && f['email'].errors['required']">
+                    Email is required.
+                  </div>
+      
+                  <div *ngIf="f['email'].errors && f['email'].errors['email']">
+                    Please, enter valid email address.
+                  </div>
+                </div>
+                <label for="">Your Phone number</label>
+                <input type="number" name="" id="" formControlName="phonenumber" />
+                <div
+                  *ngIf="f['phonenumber'].touched && f['phonenumber'].invalid"
+                  class="alert alert-danger"
+                >
+                  <div *ngIf="f['phonenumber'].errors && f['phonenumber'].errors['required']">
+                    Phone Number is required.
+                  </div>
+      
+                  <div *ngIf="f['phone-number'].errors && f['phone-number'].errors['phone-number']">
+                    Please, enter valid phone number.
+                  </div>
+                </div>
+                <label for="">What can we do for you today?</label>
+                <input type="text" name="name" id="" formControlName="" />
+                <div
+                  *ngIf="f['name'].touched && f['name'].invalid"
+                  class="alert alert-danger"
+                >
+                  <div *ngIf="f['name'].errors && f['name'].errors['required']">
+                    answer is required
+                  </div>
+                </div>
+                <label for="">Would you like a callback?</label>
+                <input type="text" name="name" id="" formControlName="" />
+                <div
+                  *ngIf="f['name'].touched && f['name'].invalid"
+                  class="alert alert-danger"
+                >
+                  <div *ngIf="f['name'].errors && f['name'].errors['required']">
+                    answer is required
+                  </div>
+                </div>
+              <button type="submit">submit</button>
+            </form>
+          </div>
+        </div>
+    </div>
+      <div class="sub-container p-3">
+        <h2 class="sub-container-h2">Get the resources you need</h2>
+        <section>
+          <div class="flex pt-7">
+            <div>
+              <ng-icon class="icons-1" name="heroPhoneArrowUpRight"></ng-icon>
+            </div>
+            <a href="">
+              <div class="icon-side-words">
+                <h3>Find support</h3>
+              <p>Get always-on access to technical support, self-help, and your Proscene instances.</p>
+              </div>
+            </a>
+          </div>
+          <div class="flex pt-7">
+            <div>
+              <ng-icon class="icons" name="heroCursorArrowRays"></ng-icon>
+            </div>
+            <a href="">
+              <div class="icon-side-words">
+                <h3>Experience a demo</h3>
+              <p>See how Proscene solutions can streamline and unite your organization to achieve goals..</p>
+              </div>
+            </a>
+          </div>
+          <div class="flex pt-7">
+            <div>
+              <ng-icon class="icons" name="heroMapPin"></ng-icon>
+            </div>
+            <a href="">
+              <div class="icon-side-words">
+                <h3>Locate our office</h3>
+              <p>We have experts in regions around Kenya, all ready to support your digital journey.</p>
+              </div>
+            </a>
+          </div>
+          <div class="flex pt-7">
+            <div>
+              <ng-icon class="icons" name="heroUserGroup"></ng-icon>
+            </div>
+            <a href="">
+              <div class="icon-side-words">
+                <h3>Explore our impact</h3>
+              <p>	Get tailored support and strategic guidance to integrate solutions and accelerate value..</p>
+              </div>
+            </a>
+          </div>
+        </section>
+      </div>
+  </main>
+  <div class="wrapper-cards">
+      <section class="cards">
+        <div class="card-one">
+            <h4>
+                We win as a team by celebrating diversity, having empathy, and enjoying the journey.
+            </h4>
+            <p class=" p-center">Explore careers <ng-icon class="icons" name="heroArrowLongRight"></ng-icon></p>
+        </div>
+        <div class="card-one">
+            <h4>
+                Connect with our team for breaking news in your region, including recent acquisitions, AI developments, and more.  
+            </h4>
+            <p class=" p-center">Contact us <ng-icon class="icons" name="heroArrowLongRight"></ng-icon></p>
+        </div>
+        <div class="card-one">
+            <h4>
+                We win as a team by celebrating diversity, having empathy, and enjoying the journey.
+            </h4>
+            <p class=" p-center">Explore careers <ng-icon class="icons" name="heroArrowLongRight"></ng-icon></p>
+        </div>
+        <div class="card-one">
+            <h4>
+                We win as a team by celebrating diversity, having empathy, and enjoying the journey.
+            </h4>
+            <p class=" p-center">Explore careers <ng-icon class="icons" name="heroArrowLongRight"></ng-icon></p>
+        </div>
+      
+      </section>
+  </div>
+  <app-footer></app-footer>  

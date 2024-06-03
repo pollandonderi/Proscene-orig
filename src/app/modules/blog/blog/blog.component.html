@@ -91,6 +91,9 @@
         </div>
     
 </div>
+<button (click)="openModal()">Open Modal</button>
+<app-modal *ngIf="isModalOpen" (closeEvent)="closeModal()"></app-modal>
+
 <div class="pt-4 pb-9">
     <div class="center"><a routerLink="" class="demo-button">Get started</a></div>
 </div>

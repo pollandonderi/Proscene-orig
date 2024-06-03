@@ -8,6 +8,7 @@ import { NgIconsModule } from '@ng-icons/core';
 import { heroBars3CenterLeft, heroBriefcase, heroChevronDown, heroCursorArrowRays, heroDocumentCheck, heroHomeModern, heroPhoneArrowUpRight, heroStar, heroUserGroup, heroXCircle} from '@ng-icons/heroicons/outline';
 import { ContactformComponent } from './contactform/contactform.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ComingSoonComponent } from './coming-soon/coming-soon.component';
 
 
 
@@ -16,7 +17,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     NavbarComponent,
     PageNotFoundComponent,
     FooterComponent,
-    ContactformComponent
+    ContactformComponent,
+    ComingSoonComponent
   ],
   exports: [
     NavbarComponent,

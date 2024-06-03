@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./blog.component.scss']
 })
 export class BlogComponent {
+  isModalOpen = false;
 
+  openModal(): void {
+    this.isModalOpen = true;
+  }
+
+  closeModal(): void {
+    this.isModalOpen = false;
+  }
 }

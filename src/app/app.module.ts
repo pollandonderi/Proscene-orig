@@ -10,6 +10,7 @@ import { FormComponent } from './components/form/form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SolutionsModule } from './modules/solutions/solutions.module';
 import { BlogModule } from './modules/blog/blog.module';
+import { ContactUsModule } from './modules/contact-us/contact-us.module';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { BlogModule } from './modules/blog/blog.module';
     AppRoutingModule,
     BlogModule,
     SharedModule,
+    ContactUsModule,
     SolutionsModule,
     ReactiveFormsModule,
     NgIconsModule.withIcons({heroCamera,heroPhone,heroChatBubbleLeftRight, heroMapPin, heroUserGroup, heroTv,heroServerStack,heroCheckBadge,heroFingerPrint,heroClipboardDocumentCheck, heroFaceSmile,heroVideoCamera, heroChevronRight,heroLockClosed, heroBolt, heroCheck}),
