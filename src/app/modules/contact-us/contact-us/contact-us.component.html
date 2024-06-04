@@ -56,6 +56,46 @@
                     answer is required
                   </div>
                 </div>
+                <label for="">Company?</label>
+                <input type="text" name="name" id="" formControlName="" />
+                <div
+                  *ngIf="f['name'].touched && f['name'].invalid"
+                  class="alert alert-danger"
+                >
+                  <div *ngIf="f['name'].errors && f['name'].errors['required']">
+                    answer is required
+                  </div>
+                </div>
+                <label for="">Job function?</label>
+                <input type="text" name="name" id="" formControlName="" />
+                <div
+                  *ngIf="f['name'].touched && f['name'].invalid"
+                  class="alert alert-danger"
+                >
+                  <div *ngIf="f['name'].errors && f['name'].errors['required']">
+                    answer is required
+                  </div>
+                </div>
+                <label for="">Department?</label>
+                <input type="text" name="name" id="" formControlName="" />
+                <div
+                  *ngIf="f['name'].touched && f['name'].invalid"
+                  class="alert alert-danger"
+                >
+                  <div *ngIf="f['name'].errors && f['name'].errors['required']">
+                    answer is required
+                  </div>
+                </div>
+                <label for="">Country</label>
+                <input type="text" name="name" id="" formControlName="" />
+                <div
+                  *ngIf="f['name'].touched && f['name'].invalid"
+                  class="alert alert-danger"
+                >
+                  <div *ngIf="f['name'].errors && f['name'].errors['required']">
+                    answer is required
+                  </div>
+                </div>
                 <label for="">Would you like a callback?</label>
                 <input type="text" name="name" id="" formControlName="" />
                 <div
@@ -78,7 +118,7 @@
             <div>
               <ng-icon class="icons-1" name="heroPhoneArrowUpRight"></ng-icon>
             </div>
-            <a href="">
+            <a routerLink="">
               <div class="icon-side-words">
                 <h3>Find support</h3>
               <p>Get always-on access to technical support, self-help, and your Proscene instances.</p>
@@ -89,7 +129,7 @@
             <div>
               <ng-icon class="icons" name="heroCursorArrowRays"></ng-icon>
             </div>
-            <a href="">
+            <a routerLink="">
               <div class="icon-side-words">
                 <h3>Experience a demo</h3>
               <p>See how Proscene solutions can streamline and unite your organization to achieve goals..</p>
@@ -100,7 +140,7 @@
             <div>
               <ng-icon class="icons" name="heroMapPin"></ng-icon>
             </div>
-            <a href="">
+            <a routerLink="">
               <div class="icon-side-words">
                 <h3>Locate our office</h3>
               <p>We have experts in regions around Kenya, all ready to support your digital journey.</p>
@@ -111,10 +151,32 @@
             <div>
               <ng-icon class="icons" name="heroUserGroup"></ng-icon>
             </div>
-            <a href="">
+            <a routerLink="">
               <div class="icon-side-words">
                 <h3>Explore our impact</h3>
               <p>	Get tailored support and strategic guidance to integrate solutions and accelerate value..</p>
+              </div>
+            </a>
+          </div>
+          <div class="flex pt-7">
+            <div>
+              <ng-icon class="icons" name="heroHandThumbUp"></ng-icon>
+            </div>
+            <a routerLink="">
+              <div class="icon-side-words">
+                <h3> Succeed with our partnerships.</h3>
+              <p>	Whatever your business challenge, our ecosystem of partners will help drive results...</p>
+              </div>
+            </a>
+          </div>
+          <div class="flex pt-7">
+            <div>
+              <ng-icon class="icons" name="heroHeart"></ng-icon>
+            </div>
+            <a routerLink="">
+              <div class="icon-side-words">
+                <h3> Collaborate  with community.</h3>
+              <p>	Tap  into a community of the beneficiaries of Proscene...</p>
               </div>
             </a>
           </div>
@@ -123,31 +185,38 @@
   </main>
   <div class="wrapper-cards">
       <section class="cards">
-        <div class="card-one">
-            <h4>
-                We win as a team by celebrating diversity, having empathy, and enjoying the journey.
-            </h4>
-            <p class=" p-center">Explore careers <ng-icon class="icons" name="heroArrowLongRight"></ng-icon></p>
-        </div>
-        <div class="card-one">
-            <h4>
-                Connect with our team for breaking news in your region, including recent acquisitions, AI developments, and more.  
-            </h4>
-            <p class=" p-center">Contact us <ng-icon class="icons" name="heroArrowLongRight"></ng-icon></p>
-        </div>
-        <div class="card-one">
-            <h4>
-                We win as a team by celebrating diversity, having empathy, and enjoying the journey.
-            </h4>
-            <p class=" p-center">Explore careers <ng-icon class="icons" name="heroArrowLongRight"></ng-icon></p>
-        </div>
-        <div class="card-one">
-            <h4>
-                We win as a team by celebrating diversity, having empathy, and enjoying the journey.
-            </h4>
-            <p class=" p-center">Explore careers <ng-icon class="icons" name="heroArrowLongRight"></ng-icon></p>
-        </div>
-      
+        <a routerLink="">
+          <div class="card-one">
+              <h4>
+                  We win as a team by celebrating diversity, having empathy, and enjoying the journey. We'd like you to join us and make an impact!.
+              </h4>
+              <p class=" p-center">Explore careers <ng-icon class="icons" name="heroArrowLongRight"></ng-icon></p>
+          </div>
+        </a>
+        <a routerLink="">
+          <div class="card-one">
+              <h4>
+                  Connect with our team for breaking news in counties,like recent acquisitions, AI developments, and more.
+              </h4>
+              <p class=" p-center">Contact us <ng-icon class="icons" name="heroArrowLongRight"></ng-icon></p>
+          </div>
+        </a>
+        <a routerLink="">
+          <div class="card-one">
+              <h4>
+                  We want to always get you updated on our latest releases and breaking news. We understand the need to always live on the edge.
+              </h4>
+              <p class=" p-center">Subscribe <ng-icon class="icons" name="heroArrowLongRight"></ng-icon></p>
+          </div>
+        </a>
+        <a routerLink="">
+          <div class="card-one">
+              <h4>
+                  Missing something? We endeavour to provide every bit of information which will help in your everyday needs.
+              </h4>
+              <p class=" p-center">Propose changes <ng-icon class="icons" name="heroArrowLongRight"></ng-icon></p>
+          </div>
+        </a>
       </section>
   </div>
   <app-footer></app-footer>  

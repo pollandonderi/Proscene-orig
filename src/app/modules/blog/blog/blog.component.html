@@ -55,47 +55,23 @@
         </div>
         <div class="center"></div>
     </div>
-        <div class="main-container">
-            <div class="card-grid">
-                <div class="card-grid-img"></div>
-                <div class="card-grid-w">
-                    <p class="date pt-2 pb-2">May 22, 2024</p>
-                    <h3 class="big-card-words-h ">The race against economic inequality within emerging markets – a case for SMEs</h3>
-                    <p class="bigcard-words-p pt-2">Society expects and depends on an ever-increasing fusion of digital and physical experiences for everyday life and business progress. This dependency is apparent in the 2024 Cisco Global Networking Trends Report, which shows a continued correlation between network investment in fueling digital experiences and the benefits felt by organizations.</p>
-                </div>
-            </div>
-            <div class="card-grid">
-                <div class="card-grid-img"></div>
-                <div class="card-grid-w">
-                    <p class="date pt-2 pb-2">May 22, 2024</p>
-                    <h3 class="big-card-words-h ">The race against economic inequality within emerging markets – a case for SMEs</h3>
-                    <p class="bigcard-words-p pt-2">Society expects and depends on an ever-increasing fusion of digital and physical experiences for everyday life and business progress. This dependency is apparent in the 2024 Cisco Global Networking Trends Report, which shows a continued correlation between network investment in fueling digital experiences and the benefits felt by organizations.</p>
-                </div>
-            </div>
-            <div class="card-grid">
-                <div class="card-grid-img"></div>
-                <div class="card-grid-w">
-                    <p class="date pt-2 pb-2">May 22, 2024</p>
-                    <h3 class="big-card-words-h ">The race against economic inequality within emerging markets – a case for SMEs</h3>
-                    <p class="bigcard-words-p pt-2">Society expects and depends on an ever-increasing fusion of digital and physical experiences for everyday life and business progress. This dependency is apparent in the 2024 Cisco Global Networking Trends Report, which shows a continued correlation between network investment in fueling digital experiences and the benefits felt by organizations.</p>
-                </div>
-            </div>
-            <div class="card-grid">
-                <div class="card-grid-img"></div>
-                <div class="card-grid-w">
-                    <p class="date pt-2 pb-2">May 22, 2024</p>
-                    <h3 class="big-card-words-h ">The race against economic inequality within emerging markets – a case for SMEs</h3>
-                    <p class="bigcard-words-p pt-2">Society expects and depends on an ever-increasing fusion of digital and physical experiences for everyday life and business progress. This dependency is apparent in the 2024 Cisco Global Networking Trends Report, which shows a continued correlation between network investment in fueling digital experiences and the benefits felt by organizations.</p>
-                </div>
-            </div>
+   
+    <div class="main-container">
+        <div class="card-grid" *ngFor="let article of blogs">
+            <div class="image1" style="height: 100px;"></div>
+          <div class="card-grid-w">
+            <p class="date pt-2 pb-2">{{article.date}}</p>
+            <h3 class="big-card-words-h">{{article.title}}</h3>
+            <p class="bigcard-words-p pt-2">{{article.content}}</p>
+            <!-- <p>{{article.explained}}</p> -->
+            <button (click)="openModal(article)">Read More</button> <!-- Button to open modal -->
+          </div>
         </div>
-    
-</div>
-<button (click)="openModal()">Open Modal</button>
-<app-modal *ngIf="isModalOpen" (closeEvent)="closeModal()"></app-modal>
-
+      </div>
+      <app-modal *ngIf="isModalOpen" [article]="selectedArticle" (closeEvent)="closeModal()"></app-modal>
+</div>      
 <div class="pt-4 pb-9">
-    <div class="center"><a routerLink="" class="demo-button">Get started</a></div>
+    <div class="center"><a routerLink="contact-us" class="demo-button">Get started</a></div>
 </div>
 </main>
 <app-contactform></app-contactform>

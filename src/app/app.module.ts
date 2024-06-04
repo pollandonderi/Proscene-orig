@@ -11,6 +11,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { SolutionsModule } from './modules/solutions/solutions.module';
 import { BlogModule } from './modules/blog/blog.module';
 import { ContactUsModule } from './modules/contact-us/contact-us.module';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { ContactUsModule } from './modules/contact-us/contact-us.module';
     SharedModule,
     ContactUsModule,
     SolutionsModule,
+    HttpClientModule,
     ReactiveFormsModule,
     NgIconsModule.withIcons({heroCamera,heroPhone,heroChatBubbleLeftRight, heroMapPin, heroUserGroup, heroTv,heroServerStack,heroCheckBadge,heroFingerPrint,heroClipboardDocumentCheck, heroFaceSmile,heroVideoCamera, heroChevronRight,heroLockClosed, heroBolt, heroCheck}),
   ],

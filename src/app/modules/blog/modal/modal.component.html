@@ -1,12 +1,50 @@
 <div class="modal-backdrop" (click)="close()"></div>
 <div class="modal">
   <div class="modal-header">
-    <h2>Modal Title</h2>
+    <h2>{{ article?.title }}</h2>
     <button class="close-button" (click)="close()">×</button>
   </div>
   <div class="modal-body">
-    <p>Modal Content Goes Here</p>
-  </div>
+    <picture>
+      <source>
+    </picture>
+    <p class="date pt-2 pb-2">{{ article?.date }}</p> 
+    <p>{{ article?.content }}</p> 
+    <p>{{ article?.explained }}</p>
+
+    <h3>{{ article?.title1 }}</h3>
+    <p>{{ article?.content1 }}</p>
+
+    <h3>{{ article?.title2 }}</h3>
+    <p>{{ article?.content2 }}</p>
+
+    <h3>{{ article?.title4 }}</h3>
+    <p>{{ article?.content4 }}</p>
+
+    <h3>{{ article?.title5 }}</h3>
+    <p>{{ article?.content5 }}</p>
+
+    <h3>{{ article?.title6 }}</h3>
+    <p>{{ article?.content6 }}</p>
+
+    <h3>{{ article?.title7 }}</h3>
+    <p>{{ article?.content7 }}</p>
+
+    <h3>{{ article?.title8 }}</h3>
+    <p>{{ article?.content8 }}</p>
+
+    <h3>{{ article?.title9 }}</h3>
+    <ul>
+        <li>{{ article?.point1 }}</li>
+        <li>{{ article?.point2 }}</li>
+        <li>{{ article?.point3 }}</li>
+        <li>{{ article?.point4 }}</li>
+    </ul>
+
+    <h3>Conclusion</h3>
+    <p>{{ article?.conclusion }}</p>
+</div>
+
   <div class="modal-footer">
     <button (click)="close()">Close</button>
   </div>

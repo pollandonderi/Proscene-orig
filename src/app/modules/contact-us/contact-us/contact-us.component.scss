@@ -6,7 +6,7 @@ main{
     width: 100%;
     padding-top: 5em;
     background-color: $the-blue;
-    padding-block: 3rem;
+    padding-block: 6rem;
 }
 .login-main-container{
     display: flex;
@@ -106,7 +106,7 @@ h4{
 }
 .p-center{
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
 
 }
 
