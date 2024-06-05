@@ -10,7 +10,8 @@ import { LawComponent } from './law/law.component';
 import { ReligiousComponent } from './religious/religious.component';
 import { SharedModule } from '../shared/shared.module';
 import { NgIconsModule } from '@ng-icons/core';
-import { heroArrowDown } from '@ng-icons/heroicons/outline';
+import { heroArrowDown, heroCubeTransparent } from '@ng-icons/heroicons/outline';
+import { AppRoutingModule } from 'src/app/app-routing.module';
 
 
 
@@ -30,7 +31,8 @@ import { heroArrowDown } from '@ng-icons/heroicons/outline';
   imports: [
     CommonModule,
     SharedModule,
-    NgIconsModule.withIcons({heroArrowDown}),
+    AppRoutingModule,
+    NgIconsModule.withIcons({heroCubeTransparent,heroArrowDown}),
 
   ]
 })

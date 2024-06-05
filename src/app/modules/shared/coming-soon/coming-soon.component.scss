@@ -21,10 +21,9 @@ main{
         font-size: $p-small;
     }
     .form{
-        background-color: white;
-        width: 100%;
+        // background-color: white;
+        gap: 1em;
         display: flex;
-  width: fit-content;
   border-radius: 20px;
     }
     input{

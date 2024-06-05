@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BlogService } from 'src/app/services/blog.service';
+import { NewsService } from 'src/app/services/news.service';
 
 @Component({
   selector: 'app-blog',
@@ -8,18 +9,24 @@ import { BlogService } from 'src/app/services/blog.service';
 })
 export class BlogComponent implements OnInit {
   
-  blogs: any[] = []; // Initialize blogs with an empty array
+  blogs: any[] = []; 
   isModalOpen = false;
   selectedArticle: any;
 
-  constructor(private service: BlogService) {}
+  constructor(private blogService: BlogService, private newsService: NewsService) {}
 
   ngOnInit(): void {
-    this.service.getblogs()
-      .subscribe(response => {
-        console.log(response.articles); // Ensure this prints an array of articles
-        this.blogs = response.articles;
-      });
+    this.blogService.getblogs()
+    .subscribe(blogResponse => {
+      console.log(blogResponse.articles); // Ensure this prints an array of articles
+      this.blogs = blogResponse.articles;
+
+      this.newsService.getnews()
+        .subscribe(newsResponse => {
+          console.log(newsResponse.articles); // Ensure this prints an array of articles
+          this.blogs = newsResponse.articles; // Combine blog and news articles
+        });
+    });
   }
 
   openModal(article: any): void {

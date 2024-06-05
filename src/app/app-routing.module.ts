@@ -6,6 +6,7 @@ import { EducationComponent } from './modules/solutions/education/education.comp
 import { BlogComponent } from './modules/blog/blog/blog.component';
 import { ContactUsComponent } from './modules/contact-us/contact-us/contact-us.component';
 import { ComingSoonComponent } from './modules/shared/coming-soon/coming-soon.component';
+import { UnifiedComponent } from './modules/solutions/unified/unified.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' }, //default route
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'blog', component: BlogComponent },
   { path: 'contact-us', component: ContactUsComponent},
   { path: 'coming-soon', component: ComingSoonComponent},
+  { path: 'unified-communications', component: UnifiedComponent},
 
   {
     path:'**',

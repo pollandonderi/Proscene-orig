@@ -1,0 +1,25 @@
+<div class="modal-backdrop" (click)="close()"></div>
+<div class="modal">
+  <div class="modal-header">
+    <h2>{{ article?.title }}</h2>
+    <button class="close-button" (click)="close()">×</button>
+  </div>
+  <div class="modal-body">
+    <div class="first-div">
+      <p class="date pt-2 pb-2">{{ article?.time }}</p> 
+      <img src="/assets/logo-white.png" style="width: 200px;" alt="" srcset="">
+    </div>
+    
+    <p>{{ article?.h2}}</p> 
+    <p>{{ article?.explained }}</p>
+
+    <h3>{{ article?.p }}</h3>
+    <p>{{ article?.p2 }}</p>
+    <h3>Conclusion</h3>
+    <p>{{ article?.conclusion }}</p>
+</div>
+
+  <div class="modal-footer">
+    <button (click)="close()">Close</button>
+  </div>
+</div>

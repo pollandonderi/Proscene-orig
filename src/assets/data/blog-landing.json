@@ -1,0 +1,51 @@
+{
+  "articles": [
+    {"time":"May 19, 2024",
+        "img":"https://storage.googleapis.com/blogs-images/ciscoblogs/1/2024/05/2024-GNT-Report-Blog-Cover-Feature-Image-600x200.jpg",
+        "h2":"Why IT Leaders Are Evolving the Network into a High-Performance Digital Engine",
+      "explained": "In 2024, digital methods of payment are outpacing cash. 3D printers are becoming a fixture in implant surgery and AI is adding color to the world for people who are visually impaired, using just a phone—and the network.",
+
+      "p": "Society expects and depends on an ever-increasing fusion of digital and physical experiences for everyday life and business progress. This dependency is apparent in the 2024 Cisco Global Networking Trends Report, which shows a continued correlation between network investment in fueling digital experiences and the benefits felt by organizations.",
+
+      "p2": "When the 2,000+ IT leaders surveyed were asked about their network investment and results over the past 12 months, they quickly pointed to a clear uptick in every key business metric: increased customer and employee satisfaction, improved operational efficiency, and business growth.",
+
+      "conclusion": "The road to success has been bumpy."
+    },
+    {
+        "time":"May 20, 2024",
+        "img":"https://storage.googleapis.com/blogs-images/ciscoblogs/1/2024/05/IL20240502144919-Cisco-Networking-Academy-Awards-1200x675-2-600x200.png",
+        "h2":"Calling All Past Alumni to Test their Strength and Compete",
+      "explained": "In 2024, digital methods of payment are outpacing cash. 3D printers are becoming a fixture in implant surgery and AI is adding color to the world for people who are visually impaired, using just a phone—and the network.",
+
+      "p": "Society expects and depends on an ever-increasing fusion of digital and physical experiences for everyday life and business progress. This dependency is apparent in the 2024 Cisco Global Networking Trends Report, which shows a continued correlation between network investment in fueling digital experiences and the benefits felt by organizations.",
+
+      "p2": "When the 2,000+ IT leaders surveyed were asked about their network investment and results over the past 12 months, they quickly pointed to a clear uptick in every key business metric: increased customer and employee satisfaction, improved operational efficiency, and business growth.",
+
+      "conclusion": "IT leaders adapt."
+    },
+    {
+        "time":"May 22, 2024",
+        "img":"https://storage.googleapis.com/blogs-images/ciscoblogs/1/2024/05/IL20240502144919-Cisco-Networking-Academy-Awards-1200x675-2-600x200.png",
+        "h2":"Microsoft and G42 announce $1 billion comprehensive digital ecosystem initiative for Kenya",
+      "explained": "Microsoft Corp. and G42 on Wednesday announced a comprehensive package of digital investments in Kenya, as part of an initiative with the Republic of Kenya’s Ministry of Information, Communications and the Digital Economy.",
+
+      "p": "In collaboration with Microsoft and other stakeholders, G42 will lead the arrangement of an initial investment of $1 billion for the various components outlined in the comprehensive package. One of the Kenyan investment priorities is a state-of-the-art green data center that will be built by G42 and its partners to run Microsoft Azure in a new East Africa Cloud Region.",
+
+      "p2": "The initiative will include four additional pillars that will be pursued with local partners: (1) local-language AI model development and research; (2) an East Africa Innovation Lab coupled with broad AI digital skills training; (3) international and local connectivity investments; and (4) collaboration with the government of Kenya to support safe and secure cloud services across East Africa.",
+
+      "conclusion": "Sustainable data center infrastructure and new East Africa cloud region."
+    },
+    {
+        "time":"June 4, 2024",
+        "img":"https://www.itnewsafrica.com/wp-content/uploads/2020/04/AWS.png",
+        "h2":"Innovative Partnership to Drive Change in Cloud ERP Services",
+      "explained": "An extended strategic collaboration between SAP SE and Amazon Web Services aims to transform current cloud-based enterprise resource planning (ERP) services. By leveraging generative artificial intelligence (AI), the alliance aims to enable businesses and create new opportunities and efficiencies.",
+
+      "p": "AWS was the first cloud provider certified to support the SAP portfolio, and today, thousands of enterprise companies run SAP solutions on AWS to get the most out of their mission-critical applications,” said Matt Garman, incoming CEO at AWS. “Now, AWS and SAP are making it faster and easier for companies to apply generative AI to their core business data to become more efficient, responsive, and sustainable.”",
+
+      "p2": "Partnerships like this collaboration with AWS are critical as we embed generative AI solutions across our ERP applications so that customers can drive innovation at an accelerated pace,” said Christian Klein, Chief Executive Officer of SAP SE. “In addition to delivering modern cloud ERP to our joint customers, we are excited to support Amazon on their own transformation journey as they adopt RISE with SAP for pioneering areas such as Project Kuiper, Amazon’s satellite initiative intended to increase global broadband access.",
+
+      "conclusion": "AWS Cloud."
+    }
+  ]
+}

@@ -5,10 +5,11 @@
     <button class="close-button" (click)="close()">×</button>
   </div>
   <div class="modal-body">
-    <picture>
-      <source>
-    </picture>
-    <p class="date pt-2 pb-2">{{ article?.date }}</p> 
+    <div class="first-div">
+      <p class="date pt-2 pb-2">{{ article?.date }}</p> 
+      <img src="/assets/logo-white.png" style="width: 200px;" alt="" srcset="">
+    </div>
+    
     <p>{{ article?.content }}</p> 
     <p>{{ article?.explained }}</p>
 
