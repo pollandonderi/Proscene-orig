@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { EducationComponent } from './education/education.component';
-import { VideowallsComponent } from './videowalls/videowalls.component';
 import { UnifiedComponent } from './unified/unified.component';
 import { MeetingsComponent } from './meetings/meetings.component';
 import { DigitalComponent } from './digital/digital.component';
@@ -19,7 +18,6 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
 @NgModule({
   declarations: [
     EducationComponent,
-    VideowallsComponent,
     UnifiedComponent,
     MeetingsComponent,
     DigitalComponent,

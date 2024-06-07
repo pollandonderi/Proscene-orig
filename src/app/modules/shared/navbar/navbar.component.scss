@@ -53,7 +53,10 @@
  
   
   /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
+  .dropdown:hover .dropdown-content {
+    display: block;
+    z-index: 9999;
+}
  
   
 .space-around{
@@ -248,9 +251,6 @@ display: none;
   }
 
   .dropdown-content-a{
-    // display: grid;
-    // grid-template-columns: repeat(2, 1fr);
-    // border-radius: 15px;
     display: flex;
     flex-wrap:wrap ;
   }

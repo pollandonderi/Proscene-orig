@@ -1,0 +1,326 @@
+@import 'src/themes.scss';
+a{
+    color: #166ef1;
+}
+.hero{
+    position: relative;
+    height: 100vh;
+}
+.hero-title{
+    font-weight: 700;
+    font-size: clamp(2.5rem, 10vw + 0.5rem, 3.5rem);
+    text-transform: capitalize;
+    color: $the-blue;
+    padding-top: 2em;
+    z-index: 2;
+    position: relative;
+}
+.hero-p{
+    color: $the-blue;
+    line-height: 1;
+    font-weight: 900;
+    z-index: 2;
+    position: relative;
+}
+.hero-image{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+    right: 0;
+    -webkit-mask-image: linear-gradient( black transparent);
+    mask-image: linear-gradient( black,  transparent);
+}
+.container-words{
+    padding-inline: 2em;
+    z-index: 2;
+}
+.words{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    // align-items: center;
+}
+.imageone{
+    background-image: url('/assets/interactive.jpeg');
+}
+.imagetwo{
+    background-image: url('/assets/Distancelearning.jpg');
+}
+.imagethree{
+    background-image: url('/assets/visual.jpg');
+}
+.t-center{
+    text-align: center;
+}
+.icons{
+    font-size: 30px;
+}
+.options{
+    display: grid;
+    gap: 1rem;
+justify-content: center;
+    grid-template-columns: repeat();
+}
+.option1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: .6rem;
+    p{
+        font-size: 1rem;
+        font-weight: 600;
+        color: rgb(51, 49, 49);
+    }
+}
+.partner-icon{
+    max-width: 160px;
+}
+.container-p-img{
+    max-width: min(80%, 800px);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+}
+.partner-images{
+    display: flex;
+}
+.section1{
+    padding-inline: 1em;
+    text-align: center;
+}
+.picture-link{
+    color: #0a58ca;
+    font-weight: 300;
+}
+.hero-p2{
+    font-weight: 500;
+    color: #0a0a22;
+    padding-bottom: 2em;
+    position: relative;
+    z-index: 99;
+}
+.h2-offers{
+    padding-top: 1em;
+    font-size: clamp(1rem, 10vw + 0.5rem, 2rem);
+    color: #0a0a22;
+    font-weight: 600;
+}
+.offers-p{
+    font-size: clamp(1rem, 5vw + 0.5rem, 1.1rem) ;
+  
+}
+.card1{
+    max-width:450px ;
+    margin: 0 auto;
+   padding: 1em;
+}
+.card1-1{
+    border-top: 2px solid $yellowish;
+}
+.image{
+    background-size: cover;
+    aspect-ratio: 10/6;
+    background-repeat: no-repeat;
+    width:100%;
+}
+.icons-1{
+    font-size: 4em;
+}
+.padding-block{
+    padding-inline: .8rem;
+}
+h5{
+    font-weight: 500;
+}
+.cards-solutions{
+    padding: 1em;
+}
+.solutions{
+    color: #222121;;
+    display: grid;
+    h5{
+        font-size: 1.4rem;
+    }
+    a , .flex1a{
+        color: #166ef1;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+}
+.form{
+    // background-color: white;
+    gap: 1em;
+    display: flex;
+border-radius: 20px;
+}
+input{
+    padding: .8em;
+    color: black;
+    border-radius: 20px;
+}
+.a-1{
+    background-color: $yellowish;
+    padding: .9em;
+    border-radius: 20px;
+}
+.sub{
+    background-color: $the-blue;
+    color: white;
+    padding-block: 1em;
+}
+.solutions1{
+    color: #222121;;
+    display: grid;
+    margin: 0 auto;
+    h5{
+        font-size: 1.4rem;
+    }
+    a , .flex1a{
+        color: #166ef1;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+}
+.flex1{
+    margin: 0 auto;
+    display: grid;
+    // margin-inline: 2rem;
+    .flex1a{
+        color: #166ef1;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    width: min(90%);
+    .images{
+        padding: 3rem;
+       background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .images-back1{
+        background-size: cover;
+        background-image: url('https://kenyaembassymuscat.com/uploads/3/5/4/2/35425158/9042693_orig.jpg');
+    }
+    .images-back2{
+        background-image: url('https://constanttech.com/wp-content/uploads/2023/05/emergency-operations-centers-and-terrorism-response.jpeg');
+    }
+    .images-back3{
+        background-image: url('/assets/screens.png');
+    }
+}
+.img-rooms{
+    height: 100px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-size: cover;
+}
+.room1{
+    background-image: url('https://t4.ftcdn.net/jpg/00/80/91/11/360_F_80911186_RoBCsyLrNTrG7Y1EOyCsaCJO5DyHgTox.jpg');
+}
+.room2{
+    background-image: url('https://trueconf.com/images/landing/what-is-videoconferencing/head/en/head.png');
+}
+.room2{
+    background-image: url('https://trueconf.com/images/landing/what-is-videoconferencing/head/en/head.png');
+}
+.room3{
+    background-image: url('https://media.istockphoto.com/id/1365567295/photo/business-colleagues-having-a-meeting-in-a-boardroom.jpg?s=612x612&w=0&k=20&c=R7dhmDVXrXl0A8ZLI0LOeVXf--jktfkCXGpM1xbuj2A=');
+}
+.room4{
+    background-image: url('https://www.shutterstock.com/image-illustration/contemporary-multimedia-classroom-digital-blackboardlaptop-260nw-576827212.jpg');
+}
+.room5{
+    background-image: url('https://media.istockphoto.com/id/1363104923/photo/diverse-modern-office-businessman-leads-business-meeting-with-managers-talks-uses.jpg?s=612x612&w=0&k=20&c=R6-SufHacJ6bCnviq37kik2Jl6RMdECybcUpEoRuMLs=');
+}
+.explanation-after{
+    padding-inline: 2em;
+}
+
+@media (min-width:35em) and (max-width:59em) {
+    .explanation-after{
+        max-width: min(80%, 800px);
+        margin: 0 auto;
+    }
+    .solutions{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 90%;
+  margin: 0 auto;
+    }
+    .solutions1{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+  margin: 0 auto;
+    }
+    .flex1{
+        grid-template-columns: repeat(2, 1fr);
+    }
+   
+    .picture-section{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width:60em) {
+    .explanation-after{
+    max-width: min(90%, 800px);
+    margin:0 auto;
+}
+
+    .hero-image{
+    -webkit-mask-image: linear-gradient(to left, black, black 10%, transparent);
+    mask-image: linear-gradient(to left, black, black 10%, transparent);     
+    }  
+    .container-words{
+        width: 50%;
+    }
+    .hero-p2{
+        padding-bottom: 2em;
+    }
+    .h2-offers{
+        padding-top: 1em;
+    }
+    .offers-p{
+        width: 50%;
+        max-width: 800px;
+    }
+    .solutions{
+        padding-top: 2rem;
+        grid-template-columns: repeat(3, 1fr);
+        width: 90%;
+  margin: 0 auto;
+    }
+    .solutions1{
+        padding-top: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+  margin: 0 auto;
+    }
+    .options{
+        grid-template-columns: repeat(5, 1fr);
+        width: min(90%, 900px);
+  margin: 0 auto;
+  padding-block: 3em;
+    }
+    .flex1{
+        grid-template-columns: repeat(2, 1fr);
+        padding-block: 3em;
+    }
+    .images, .wordsm{
+        margin: 3rem;
+    }
+    .flex1-words-p{
+        padding-inline-start:6em ;
+    }
+}

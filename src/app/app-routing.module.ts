@@ -7,6 +7,11 @@ import { BlogComponent } from './modules/blog/blog/blog.component';
 import { ContactUsComponent } from './modules/contact-us/contact-us/contact-us.component';
 import { ComingSoonComponent } from './modules/shared/coming-soon/coming-soon.component';
 import { UnifiedComponent } from './modules/solutions/unified/unified.component';
+import { MeetingsComponent } from './modules/solutions/meetings/meetings.component';
+import { DigitalComponent } from './modules/solutions/digital/digital.component';
+import { LawComponent } from './modules/solutions/law/law.component';
+import { ReligiousComponent } from './modules/solutions/religious/religious.component';
+import { GovernmentComponent } from './modules/solutions/government/government.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' }, //default route
@@ -16,6 +21,11 @@ const routes: Routes = [
   { path: 'contact-us', component: ContactUsComponent},
   { path: 'coming-soon', component: ComingSoonComponent},
   { path: 'unified-communications', component: UnifiedComponent},
+  { path: 'meetings', component: MeetingsComponent},
+  { path: 'digital-signage', component: DigitalComponent},
+  { path: 'law', component: LawComponent},
+  { path: 'religious', component: ReligiousComponent},
+  { path: 'government', component: GovernmentComponent},
 
   {
     path:'**',
