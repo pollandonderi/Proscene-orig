@@ -49,9 +49,11 @@
 .imagethree{
     background-image: url('/assets/visual.jpg');
 }
+.wordsdigital-container{
+    padding-inline: 1em;
+}
 .wordsdigital{
     display: grid;
-    padding-inline: 1em;
 }
 .t-center{
     text-align: center;
@@ -174,6 +176,10 @@ input{
     }
 
 }
+#complete{
+    background-color: $the-blue;
+    color: #fff ;
+}
 .flex1{
     margin: 0 auto;
     display: grid;
@@ -190,17 +196,27 @@ input{
        background-size: cover;
         background-repeat: no-repeat;
     }
+    .law-center{
+        display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+    }
     .images-back1{
         background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoIWqCYaAgQOZ6tWQCWDTUAt-OxCX0qaG8HylbHAPJ4pHw5nk64tAIbB89V-whcYuy-vY&usqp=CAU');
+        aspect-ratio: 10/5;
     }
     .images-back11{
-        background-image: url('https://img.freepik.com/free-photo/successful-happy-business-team_53876-74892.jpg?size=626&ext=jpg&ga=GA1.1.2116175301.1717718400&semt=sph');
+        background-image: url('https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHBsYW5uaW5nfGVufDB8fDB8fHww');
+        aspect-ratio: 10/5;
     }
     .images-back2{
         background-image: url('https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YW5hbHl0aWNzfGVufDB8fDB8fHww');
+        aspect-ratio: 10/5;
     }
     .images-back3{
         background-image: url('/assets/screens.png');
+        aspect-ratio: 10/5;
     }
 }
 @media (min-width:35em) and (max-width:59em) {
@@ -283,10 +299,12 @@ input{
         grid-template-columns: repeat(4,1fr);
         grid-gap: 1.5em;
     }
-    .wordsdigital{
-        grid-template-columns: repeat(2,1fr);
+    .wordsdigital-container{
         max-width: min(90%, 1100px);
         margin: 0 auto;
+    }
+    .wordsdigital{
+        grid-template-columns: repeat(2,1fr);
         padding-top: 2em;
     }
     .explanation-after{
