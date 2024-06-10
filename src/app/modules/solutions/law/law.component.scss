@@ -306,6 +306,8 @@ input{
     .wordsdigital{
         grid-template-columns: repeat(2,1fr);
         padding-top: 2em;
+        max-width: min(90%, 1100px);
+        margin: 0 auto;
     }
     .explanation-after{
         max-width: min(90%, 800px);
