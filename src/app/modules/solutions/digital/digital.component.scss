@@ -1,44 +1,7 @@
 @import 'src/themes.scss';
-.hero{
-    position: relative;
-    height: 100vh;
-}
-.hero-title{
-    font-weight: 700;
-    font-size: clamp(2.5rem, 10vw + 0.5rem, 3.5rem);
-    text-transform: capitalize;
-    color: $the-blue;
-    padding-top: 2em;
-    z-index: 2;
-    position: relative;
-}
-.hero-p{
-    color: $the-blue;
-    line-height: 1;
-    font-weight: 900;
-    z-index: 2;
-    position: relative;
-}
-.hero-image{
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    left: 0;
-    top: 0;
-    right: 0;
-    -webkit-mask-image: linear-gradient( black transparent);
-    mask-image: linear-gradient( black,  transparent);
-}
 .container-words{
     padding-inline: 2em;
     z-index: 2;
-}
-.words{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    // align-items: center;
 }
 .picturesdigital{
     display: grid;
@@ -48,39 +11,27 @@
 .imgd{
     background-repeat: no-repeat;
     background-size: cover;
-    // aspect-ratio: 10/6;
     margin-top: 2em;
     height: 200px;
     background-position: center;
 }
 .imgd1{
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTnsFvLPejI9maZF0gqqdB7_vZd5balUTcTsQqo2tf-COpyY4XDYcWJjQDLK_5yzmFb3k&usqp=CAU');
+    background-image: url('/assets/Digital.jpg');
 }
 .imgd2{
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT79eeVfdWme9E97EoY8K6Pmj_g7-2JiKccgQ&s');
+    background-image: url('/assets/signage.jpeg');
 }
 .imgd3{
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFsi9fLUlpdxG-y9voE-7Gw_VY6RSpvb1bqg&s');
+    background-image: url('/assets/signage2.jpeg');
 }
 .imgd4{
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_0e0qeX_RQ46WddSb-213a2FOyXNfupiS_A&s');
-}
-.imageone{
-    background-image: url('/assets/interactive.jpeg');
-}
-.imagetwo{
-    background-image: url('/assets/Distancelearning.jpg');
-}
-.imagethree{
-    background-image: url('/assets/visual.jpg');
+    background-image: url('/assets/signage3.jpeg');
 }
 .wordsdigital{
     display: grid;
     padding-inline: 1em;
 }
-.t-center{
-    text-align: center;
-}
+
 .icons{
     font-size: 30px;
 }
@@ -105,23 +56,6 @@
     color: #0a58ca;
     font-weight: 300;
 }
-.hero-p2{
-    font-weight: 500;
-    color: #0a0a22;
-    padding-bottom: 2em;
-    position: relative;
-    z-index: 99;
-}
-.h2-offers{
-    padding-top: 1em;
-    font-size: clamp(1rem, 10vw + 0.5rem, 2rem);
-    color: #0a0a22;
-    font-weight: 600;
-}
-.offers-p{
-    font-size: clamp(1rem, 5vw + 0.5rem, 1.1rem) ;
-  
-}
 .card1{
     max-width:450px ;
     margin: 0 auto;
@@ -137,14 +71,8 @@
     padding-top: 3em;
     width:100%;
 }
-.icons-1{
-    font-size: 4em;
-}
 .padding-block{
     padding-inline: .8rem;
-}
-h5{
-    font-weight: 500;
 }
 .cards-solutions{
     padding: 1em;
@@ -164,7 +92,6 @@ h5{
 
 }
 .form{
-    // background-color: white;
     gap: 1em;
     display: flex;
 border-radius: 20px;
@@ -202,7 +129,6 @@ input{
 .flex1{
     margin: 0 auto;
     display: grid;
-    // margin-inline: 2rem;
     .flex1a{
         color: #166ef1;
         font-size: 1.2rem;
