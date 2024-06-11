@@ -16,19 +16,20 @@ export class BlogComponent implements OnInit {
   constructor(private blogService: BlogService, private newsService: NewsService) {}
 
   ngOnInit(): void {
-    this.blogService.getblogs()
-    .subscribe(blogResponse => {
+    this.blogService.getblogs().subscribe(blogResponse => {
       console.log(blogResponse.articles); // Ensure this prints an array of articles
-      this.blogs = blogResponse.articles;
-
-      this.newsService.getnews()
-        .subscribe(newsResponse => {
-          console.log(newsResponse.articles); // Ensure this prints an array of articles
-          this.blogs = newsResponse.articles; // Combine blog and news articles
-        });
+      const blogArticles = blogResponse.articles;
+  
+      this.newsService.getnews().subscribe(newsResponse => {
+        console.log(newsResponse.articles); // Ensure this prints an array of articles
+        const newsArticles = newsResponse.articles;
+  
+        // Combine blog and news articles
+        this.blogs = [...blogArticles, ...newsArticles];
+      });
     });
   }
-
+  
   openModal(article: any): void {
     this.selectedArticle = article;
     this.isModalOpen = true;

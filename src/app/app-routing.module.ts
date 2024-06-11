@@ -12,6 +12,8 @@ import { DigitalComponent } from './modules/solutions/digital/digital.component'
 import { LawComponent } from './modules/solutions/law/law.component';
 import { ReligiousComponent } from './modules/solutions/religious/religious.component';
 import { GovernmentComponent } from './modules/solutions/government/government.component';
+import { PrivacyPolicyComponent } from './components/privacy-policy/privacy-policy.component';
+import { TermsOfUseComponent } from './components/terms-of-use/terms-of-use.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' }, //default route
@@ -26,6 +28,8 @@ const routes: Routes = [
   { path: 'law', component: LawComponent},
   { path: 'religious', component: ReligiousComponent},
   { path: 'government', component: GovernmentComponent},
+  { path: 'privacy-policy', component: PrivacyPolicyComponent},
+  { path: 'terms-of-use', component: TermsOfUseComponent},
 
   {
     path:'**',

@@ -12,6 +12,8 @@ import { SolutionsModule } from './modules/solutions/solutions.module';
 import { BlogModule } from './modules/blog/blog.module';
 import { ContactUsModule } from './modules/contact-us/contact-us.module';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { PrivacyPolicyComponent } from './components/privacy-policy/privacy-policy.component';
+import { TermsOfUseComponent } from './components/terms-of-use/terms-of-use.component';
 
 
 @NgModule({
@@ -19,6 +21,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     AppComponent,
     HomepageComponent,
     FormComponent,
+    PrivacyPolicyComponent,
+    TermsOfUseComponent,
     
    
   ],
