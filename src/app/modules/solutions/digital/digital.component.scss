@@ -3,6 +3,9 @@
     padding-inline: 2em;
     z-index: 2;
 }
+.header-p{
+    color: $the-blue !important;
+}
 .picturesdigital{
     display: grid;
     max-width: min(97%, 1200px);
