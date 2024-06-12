@@ -14,6 +14,10 @@ import { ReligiousComponent } from './modules/solutions/religious/religious.comp
 import { GovernmentComponent } from './modules/solutions/government/government.component';
 import { PrivacyPolicyComponent } from './components/privacy-policy/privacy-policy.component';
 import { TermsOfUseComponent } from './components/terms-of-use/terms-of-use.component';
+import { ProfessionalComponent } from './modules/services/professional/professional.component';
+import { AvRoomDesignComponent } from './modules/services/av-room-design/av-room-design.component';
+import { SupportCountrywideComponent } from './modules/services/support-countrywide/support-countrywide.component';
+import { CollaborationAsAServiceComponent } from './modules/services/collaboration-as-a-service/collaboration-as-a-service.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' }, //default route
@@ -30,6 +34,10 @@ const routes: Routes = [
   { path: 'government', component: GovernmentComponent},
   { path: 'privacy-policy', component: PrivacyPolicyComponent},
   { path: 'terms-of-use', component: TermsOfUseComponent},
+  { path: 'collaboration-as-a-service', component: CollaborationAsAServiceComponent},
+  { path: 'globalsupport', component: SupportCountrywideComponent},
+  { path: 'AV-room-design', component: AvRoomDesignComponent},
+  { path: 'professional', component: ProfessionalComponent},
 
   {
     path:'**',

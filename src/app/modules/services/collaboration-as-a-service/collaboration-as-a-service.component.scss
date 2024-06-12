@@ -1,0 +1,121 @@
+@import 'src/themes.scss';
+  .switcher{
+    height: 100%;
+background-color: $the-blue;
+    color: white;
+  }
+  
+  .main{
+    // height: 90dvh;
+    padding-top: 3rem;
+  }
+  .decorative-image{
+    background-image: url('/assets/maintain.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    aspect-ratio: 10/5;
+  }
+  h1{
+    font-weight: 400;
+  }
+  .words{
+    background-color: var(--color-light);
+    padding: 2rem;
+  }
+  ul li{
+    padding-block: .5em;
+  }
+  ul li::marker{
+    content:"☑  ";
+  }
+.service-paragraphs, h2{
+    padding-block: .5rem;
+    padding-inline: 2rem;
+}
+.colored{
+    text-align: center;
+    width: min(90%, 1150px);
+    color: #fff;
+    margin: 0 auto;
+}
+.colored-grid{
+    display: grid;
+}
+.icons{
+    font-size: 3rem;
+}
+.colored-grid-card{
+    border-top: 2px solid $the-blue;
+    
+    .grid-card-p{
+        font-weight: 700;
+        font-size: 1.3rem;
+    }
+}
+.wrapper-color{
+background-color: $the-blue;
+}
+.partner-images{
+    display: flex;
+}
+.container-p-img{
+    max-width: min(80%, 800px);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+}
+.partner-icon{
+    max-width: 160px;
+}
+a{
+    color: rgb(77, 107, 241);
+}
+.collaboration-detail{
+    display: grid;
+}
+@media (min-width:35em) and (max-width:59em) {   
+}
+  @media (min-width:45em) {
+    .words{
+        padding: 4rem;
+      }
+    .decorative-image{
+      background-image: url('/assets/maintain.avif');
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+    }
+    .main{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2em;
+      padding: 1.6em;
+    }
+    .articles-ul{
+        padding-left: 2em;
+    }
+    .service-paragraphs, h2{
+       width: min(90%, 1000px);
+       margin: 0 auto;
+    }
+    .colored-grid{
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+    }
+    .collaboration-detail{
+        padding-top: 3rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (min-width:60em) {
+    
+    .images, .wordsm{
+        margin: 3rem;
+    }
+    .flex1-words-p{
+        padding-inline-start:6em ;
+    }
+}

@@ -1,0 +1,101 @@
+@import 'src/themes.scss';
+  .switcher{
+    height: 100%;
+background-color: $the-blue;
+    color: white;
+  }
+  
+  .main{
+    height: 100dvh;
+    height: 100svh;
+    padding-top: 3rem;
+  }
+  .decorative-image{
+    background-image: url('/assets/maintain.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    aspect-ratio: 10/5;
+  }
+  h1{
+    font-weight: 400;
+  }
+  .words{
+    background-color: var(--color-light);
+    padding: 2rem;
+  }
+  ul li{
+    padding-block: .5em;
+  }
+  ul li::marker{
+    content:"☑  ";
+  }
+
+.partner-images{
+    display: flex;
+}
+.container-p-img{
+    max-width: min(80%, 800px);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+}
+.partner-icon{
+    max-width: 160px;
+}
+a{
+    color: rgb(77, 107, 241);
+}
+.wrapper-professional-card{
+    width: mim(90%, 1200px);
+    display: grid;
+    h3{
+        font-weight: 800;
+        font-size: clamp(1.125rem, 1.0243rem + 0.5034vw, 1.4963rem);
+    }
+    .professional-card-picture{
+        background-image: url('/assets/maintain.avif');
+        background-size: cover;
+        background-repeat: no-repeat;
+        aspect-ratio: 10/5;
+    }
+    .professional-card{
+        max-width: min(100%,420px);
+        margin: 0 auto;
+        padding-inline: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+
+
+@media (min-width:35em) and (max-width:59em) {   
+}
+  @media (min-width:45em) {
+    .words{
+        padding: 4rem;
+      }
+    .decorative-image{
+      background-image: url('/assets/maintain.avif');
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+    }
+    .main{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2em;
+      padding: 1.6em;
+    }
+    .wrapper-professional-card{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    
+  }
+  @media (min-width:60em) {
+    
+
+}

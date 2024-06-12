@@ -2,6 +2,7 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 @import 'themes.scss';
+$hero-title:clamp(2.5rem, 10vw + 0.5rem, 3.5rem);
 *,
 ::before,
 ::after{
@@ -17,7 +18,7 @@
 }
 .hero-title{
   font-weight: 700;
-  font-size: clamp(2.5rem, 10vw + 0.5rem, 3.5rem);
+  font-size: $hero-title;
   text-transform: capitalize;
   color: $the-blue;
   padding-top: 2em;
@@ -119,12 +120,26 @@
   line-height: 1.4;
   color: $text;
 }
+//the services section css begins here
+.services-header{
+  font-size: $hero-title;
+}
+.services-button{
+  border: 1px solid $the-blue;
+padding: 4px 21px;
+text-transform: capitalize;
+background-color: #fff;
+color: $the-blue;
+border-radius: 30px;
+transition: all 0.5s ease;
+}
+.services-button:hover{
+  background-color: #bf2525;
+  color: #0a0a22;
+}
 @media (min-width:35em) and (max-width:60em) {
 
 }
-
-
-
 @media (min-width : 60em) {
     .demo-button{
         padding: 7px 23px;
