@@ -14,6 +14,7 @@ import { ContactUsModule } from './modules/contact-us/contact-us.module';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { PrivacyPolicyComponent } from './components/privacy-policy/privacy-policy.component';
 import { TermsOfUseComponent } from './components/terms-of-use/terms-of-use.component';
+import { ServicesModule } from './modules/services/services.module';
 
 
 @NgModule({
@@ -22,9 +23,7 @@ import { TermsOfUseComponent } from './components/terms-of-use/terms-of-use.comp
     HomepageComponent,
     FormComponent,
     PrivacyPolicyComponent,
-    TermsOfUseComponent,
-    
-   
+    TermsOfUseComponent 
   ],
   imports: [
     BrowserModule,
@@ -33,6 +32,7 @@ import { TermsOfUseComponent } from './components/terms-of-use/terms-of-use.comp
     SharedModule,
     ContactUsModule,
     SolutionsModule,
+    ServicesModule,
     HttpClientModule,
     ReactiveFormsModule,
     NgIconsModule.withIcons({heroCamera,heroPhone,heroChatBubbleLeftRight, heroMapPin, heroUserGroup, heroTv,heroServerStack,heroCheckBadge,heroFingerPrint,heroClipboardDocumentCheck, heroFaceSmile,heroVideoCamera, heroChevronRight,heroLockClosed, heroBolt, heroCheck}),
