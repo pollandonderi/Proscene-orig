@@ -1,0 +1,128 @@
+@import 'src/themes.scss';
+  .switcher{
+    height: 100%;
+background-color: $the-blue;
+    color: white;
+  }
+  
+  .main{
+    height: 100dvh;
+    height: 100svh;
+    padding-top: 3rem;
+  }
+  .decorative-image{
+    background-image: url('/assets/arch.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    aspect-ratio: 10/5;
+  }
+  h1{
+    font-weight: 400;
+  }
+  .words{
+    background-color: var(--color-light);
+    padding: 2rem;
+  }
+  ul li{
+    padding-block: .5em;
+  }
+  ul li::marker{
+    content:"☑  ";
+  }
+
+.partner-images{
+    display: flex;
+}
+.container-p-img{
+    max-width: min(80%, 800px);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+}
+.partner-icon{
+    max-width: 160px;
+}
+a{
+    color: rgb(77, 107, 241);
+}
+.design-h3{
+  font-size: clamp(1.125rem, 1.0243rem + 0.5034vw, 1.4963rem);
+}
+.container-wrapper-p{
+  background-color: $the-blue;
+  color: #fff;
+  .wrapper-design-p{
+    width: min(80%, 1200px);
+    margin: 0 auto;
+  }
+}
+.card-desgn-container{
+  width: min(87%, 1100px);
+  margin: 0 auto;
+  display: grid;
+  .card-design-h4{
+    font-size: clamp(1rem, 0.9661rem + 0.1695vw, 1.125rem);
+  }
+}
+.card-design-img{
+  background-size: cover;
+  background-repeat: no-repeat;
+  aspect-ratio: 10/5;
+ 
+}
+.img1{
+  background-image: url('/assets/mobile.avif');
+}
+.img2{
+  background-image: url('/assets/small-room.avif');
+}
+.img3{
+  background-image: url('/assets/medium.avif');
+}
+.img4{
+  background-image: url('/assets/big-room.avif');
+}
+.icons{
+  font-size: 3rem;
+}
+.big-weight{
+  font-weight: 900;
+}
+.design-tracking-container{
+  display: grid;
+}
+
+  @media (min-width:45em) {
+    .words{
+        padding: 4rem;
+      }
+    .decorative-image{
+      background-image: url('/assets/arch.avif');
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 95%;
+      width: 100%;
+    }
+    .main{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2em;
+      padding: 1.6em;
+    } 
+    .card-desgn-container{
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 2rem;
+    }
+    .design-tracking-container{
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 1rem;
+      width: min(90% ,1200px);
+      padding-bottom: 2rem;
+      margin: 0 auto;
+    }
+  }
+  @media (min-width:60em) {
+
+}
