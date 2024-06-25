@@ -6,6 +6,7 @@
 }
 .logo1{
     height:"30px" !important;
+    z-index: 999999;
 }
 .dropbtn {
     border: none;
@@ -251,8 +252,9 @@ display: none;
   }
 
   .dropdown-content-a{
-    display: flex;
-    flex-wrap:wrap ;
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);
   }
   .drop-container{
     display: flex;

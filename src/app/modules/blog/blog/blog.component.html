@@ -1,61 +1,55 @@
 <app-navbar></app-navbar>
 <main>
-<div class="blog-land">
-    <div class="header">
-        <h1 class=" center"><span class="mr-4">Stories </span> and <span class="ml-4"> ideas</span></h1>
+    <div class="blog-land">
+        <div class="header">
+            <h1 class=" center"><span class="mr-4">Stories </span> and <span class="ml-4"> ideas</span></h1>
+            <div class="first">
+                <div>
+                    <h2 class="center">Best of the week...</h2>
+                </div>
+                <div class="center"><a routerLink="" class="demo-button">Get in touch</a></div>
+            </div>
+            <div class="section1">
+                <div class="flex-3">
+                    <div *ngFor="let article of blogs" class="card1">
+                        <img src="{{article.img}}" alt="" srcset="" style="height: 70px; aspect-ratio: 10/5;">
+                        <div>
+                            <p class="date pt-2 pb-2">{{ article.time }}</p>
+                            <h3 class="big-card-words-h">{{ article.h2 }}</h3>
+                            <button (click)="openModal(article)">Read More</button>
+                        </div>
+                    </div>
+                    <app-modalnews *ngIf="isModalOpen" [article]="selectedArticle"
+                        (closeEvent)="closeModal()">
+                    </app-modalnews>
+                </div>
+
+            </div>
+        </div>
         <div class="first">
             <div>
-                <h2 class="center">Best of the week...</h2>
+                <h2 class="center pt-7">Success stories...</h2>
             </div>
-            <div class="center"><a routerLink="" class="demo-button">Get in touch</a></div>
+            <div class="center"></div>
         </div>
-        <div class="section1">
-            <div class="big-card">
-                <div class="big-card-img"></div>
-                <div class="big-card-words">
-                    <p class="date pt-2 pb-2">May 22, 2024</p>
-                    <h3 class="big-card-words-h ">Why IT Leaders Are Evolving the Network into a High-Performance Digital Engine</h3>
-                    <p class="bigcard-words-p pt-2">Society expects and depends on an ever-increasing fusion of digital and physical experiences for everyday life and business progress. This dependency is apparent in the 2024 Cisco Global Networking Trends Report, which shows a continued correlation between network investment in fueling digital experiences and the benefits felt by organizations.</p>
+
+        <div class="main-container">
+            <div class="card-grid" *ngFor="let article of blogs">
+                <div class="image1" style="height: 100px;"></div>
+                <div class="card-grid-w">
+                    <p class="date pt-2 pb-2">{{article.date}}</p>
+                    <h3 class="big-card-words-h">{{article.title}}</h3>
+                    <p class="bigcard-words-p pt-2">{{article.content}}</p>
+                    <!-- <p>{{article.explained}}</p> -->
+                    <button (click)="openModal(article)">Read More</button> <!-- Button to open modal -->
                 </div>
             </div>
-            <div class="flex-3">
-                <div *ngFor="let article of blogs" class="card1">
-                    <img src="{{article.img}}" alt="" srcset="" style="height: 70px; aspect-ratio: 10/5;">
-                  <div>
-                      <p class="date pt-2 pb-2">{{ article.time }}</p>
-                      <h3 class="big-card-words-h">{{ article.h2 }}</h3>
-                      <button (click)="openModal(article)">Read More</button>
-                  </div>
-                </div>
-                <app-modalnews *ngIf="isModalOpen" [article]="selectedArticle" (closeEvent)="closeModal()"></app-modalnews>
-              </div>
-              
         </div>
+        <app-modal *ngIf="isModalOpen" [article]="selectedArticle" (closeEvent)="closeModal()"></app-modal>
     </div>
-    <div class="first">
-        <div>
-            <h2 class="center pt-7">Success stories...</h2>
-        </div>
-        <div class="center"></div>
+    <div class="pt-4 pb-9">
+        <div class="center"><a routerLink="/contact-us" class="demo-button">Get started</a></div>
     </div>
-   
-    <div class="main-container">
-        <div class="card-grid" *ngFor="let article of blogs">
-            <div class="image1" style="height: 100px;"></div>
-          <div class="card-grid-w">
-            <p class="date pt-2 pb-2">{{article.date}}</p>
-            <h3 class="big-card-words-h">{{article.title}}</h3>
-            <p class="bigcard-words-p pt-2">{{article.content}}</p>
-            <!-- <p>{{article.explained}}</p> -->
-            <button (click)="openModal(article)">Read More</button> <!-- Button to open modal -->
-          </div>
-        </div>
-      </div>
-      <app-modal *ngIf="isModalOpen" [article]="selectedArticle" (closeEvent)="closeModal()"></app-modal>
-</div>      
-<div class="pt-4 pb-9">
-    <div class="center"><a routerLink="/contact-us" class="demo-button">Get started</a></div>
-</div>
 </main>
 <app-contactform></app-contactform>
 <app-footer></app-footer>
