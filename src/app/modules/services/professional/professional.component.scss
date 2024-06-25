@@ -1,21 +1,12 @@
 @import 'src/themes.scss';
   .switcher{
     height: 100%;
-background-color: $the-blue;
-    color: white;
-  }
-  
+    color: $the-blue;
+  } 
   .main{
     height: 100dvh;
-    height: 100svh;
+    height: 100%;
     padding-top: 3rem;
-  }
-  .decorative-image{
-    background-image: url('/assets/event-s.avif');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    aspect-ratio: 10/5;
   }
   h1{
     font-weight: 400;
@@ -47,9 +38,17 @@ background-color: $the-blue;
 a{
     color: rgb(77, 107, 241);
 }
+.back-blue{
+  background-color: $the-blue;
+  color: white;
+  padding-block: 2rem;
+}
 .wrapper-professional-card{
     width: mim(90%, 1200px);
     display: grid;
+    .pc-title{
+      padding-block: 1rem;
+    }
     h3{
         font-weight: 800;
         font-size: clamp(1.125rem, 1.0243rem + 0.5034vw, 1.4963rem);
@@ -82,13 +81,7 @@ a{
     .words{
         padding: 4rem;
       }
-    .decorative-image{
-      background-image: url('/assets/event-s.avif');
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 100%;
-      width: 100%;
-    }
+    
     .main{
       display: grid;
       grid-template-columns: repeat(2, 1fr);

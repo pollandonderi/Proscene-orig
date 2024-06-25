@@ -14,7 +14,7 @@ $hero-title:clamp(2.5rem, 10vw + 0.5rem, 3.5rem);
 }
 .hero{
   position: relative;
-  height: 100vh;
+  height: 100%;
 }
 .hero-title{
   font-weight: 700;
@@ -137,12 +137,41 @@ transition: all 0.5s ease;
   background-color: #bf2525;
   color: #0a0a22;
 }
-@media (min-width:35em) and (max-width:60em) {
+ .flex1-container{
+    color: #fff;
+    background-color: $the-blue;
+    padding-block: 3rem;
+  }
+  .flex1{
+    margin: 0 auto;
+    display: grid;
+    .flex1a{
+        color: #166ef1;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
 
+    width: min(90%);
+    .images{
+        padding: 3rem;
+       background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
-@media (min-width : 60em) {
+
+@media (min-width:45em){
+
     .demo-button{
         padding: 7px 23px;
     }
-  
+    .flex1{
+      grid-template-columns: repeat(2, 1fr);
+      padding-block: 3em;
+  }
+  .flex1-words-p{
+    padding-inline-start:6em ;
+}
+.flex1 .images{
+  padding: 3rem !important;
+}
 }

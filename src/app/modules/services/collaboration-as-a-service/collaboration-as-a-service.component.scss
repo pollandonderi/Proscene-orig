@@ -1,20 +1,11 @@
 @import 'src/themes.scss';
   .switcher{
     height: 100%;
-background-color: $the-blue;
-    color: white;
+    color: $the-blue;
   }
   
   .main{
-    // height: 90dvh;
     padding-top: 3rem;
-  }
-  .decorative-image{
-    background-image: url('/assets/collaboration.avif');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    aspect-ratio: 10/5;
   }
   h1{
     font-weight: 400;
@@ -27,7 +18,8 @@ background-color: $the-blue;
     padding-block: .5em;
   }
   ul li::marker{
-    content:"☑  ";
+    content:"   ☑  ";
+    padding-left: 4rem;
   }
 .service-paragraphs, h2{
     padding-block: .5rem;
@@ -46,7 +38,7 @@ background-color: $the-blue;
     font-size: 3rem;
 }
 .colored-grid-card{
-    border-top: 2px solid $the-blue;
+    border-top: 3px solid #ED4B2596;
     
     .grid-card-p{
         font-weight: 700;
@@ -67,7 +59,7 @@ background-color: $the-blue;
     justify-content: center;
 }
 .partner-icon{
-    max-width: 160px;
+    max-width: 130px;
 }
 a{
     color: rgb(77, 107, 241);
@@ -75,19 +67,15 @@ a{
 .collaboration-detail{
     display: grid;
 }
+.grey{
+  background-color: #F1F1F1 ;
+}
 @media (min-width:35em) and (max-width:59em) {   
 }
   @media (min-width:45em) {
     .words{
         padding: 4rem;
       }
-    .decorative-image{
-      background-image: url('/assets/collaboration.avif');
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 100%;
-      width: 100%;
-    }
     .main{
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -103,7 +91,8 @@ a{
     }
     .colored-grid{
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 1rem;
+        grid-gap: 3rem;
+    padding-block: 3rem;
     }
     .collaboration-detail{
         padding-top: 3rem;

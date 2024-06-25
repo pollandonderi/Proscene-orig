@@ -1,20 +1,12 @@
 @import 'src/themes.scss';
   .switcher{
     height: 100%;
-background-color: $the-blue;
-    color: white;
+color: $the-blue;
   }
   
   .main{
     
     margin-top: 3rem;
-  }
-  .decorative-image{
-    background-image: url('/assets/maintain.avif');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    aspect-ratio: 10/5;
   }
   h1{
     font-weight: 400;
@@ -29,26 +21,11 @@ background-color: $the-blue;
   ul li::marker{
     content:"☑  ";
   }
-  .flex1{
-    margin: 0 auto;
-    display: grid;
-    // margin-inline: 2rem;
-    .flex1a{
-        color: #166ef1;
-        font-size: 1.2rem;
-        font-weight: 500;
-    }
-
-    width: min(90%);
-    .images{
-        padding: 3rem;
-       background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .images-back1{
-        background-image: url('/assets/maintain2.avif');
-    }
-}
+  .grey-back{
+    background-color: #F1F1F1 ;
+    padding-block: 3rem;
+  }
+  
 .choose-card{
     border-top: 2px solid $the-blue;
     margin-block: 1rem;
@@ -59,18 +36,18 @@ background-color: $the-blue;
   font-size: 1.4rem;
 }
 .choose{
-    display: flex;
-    flex-direction: column;
+    display: grid;
     text-align: center;
     padding-inline: 1rem;
     margin-block: 1.5rem;
-    justify-content: center;
 }
 .service-paragraphs, h2{
     padding-block: .5rem;
     padding-inline: 2rem;
 }
-
+.images-back1{
+  background-image: url('/assets/maintain2.avif');
+}
 @media (min-width:35em) and (max-width:59em) {
  
     .flex1{
@@ -79,16 +56,6 @@ background-color: $the-blue;
     
 }
   @media (min-width:45em) {
-    .words{
-        padding: 4rem;
-      }
-    .decorative-image{
-      background-image: url('/assets/maintain.avif');
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 90%;
-      width: 100%;
-    }
     .main{
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -99,7 +66,9 @@ background-color: $the-blue;
         padding-left: 2em;
     }
     .choose{
-        flex-direction: row;
+       grid-template-columns: repeat(4, 1fr);
+       max-width: min(90%, 1200px);
+       margin: auto;
         gap:1rem;
     }
     .service-paragraphs, h2{
@@ -109,14 +78,9 @@ background-color: $the-blue;
   }
 
   @media (min-width:60em) {
-    .flex1{
-        grid-template-columns: repeat(2, 1fr);
-        padding-block: 3em;
-    }
+    
     .images, .wordsm{
         margin: 3rem;
     }
-    .flex1-words-p{
-        padding-inline-start:6em ;
-    }
+    
 }

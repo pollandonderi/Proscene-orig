@@ -1,22 +1,22 @@
 @import 'src/themes.scss';
   .switcher{
     height: 100%;
-background-color: $the-blue;
-    color: white;
+    color: $the-blue;
   }
   
   .main{
     height: 100dvh;
-    height: 100svh;
+    height: 100%;
     padding-top: 3rem;
   }
-  .decorative-image{
-    background-image: url('/assets/arch.avif');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    aspect-ratio: 10/5;
-  }
+.flex1-container{
+  color: #fff;
+  background-color: $the-blue;
+  padding-block: 3rem;
+}
+.flex1 .images{
+  padding: 0;
+}
   h1{
     font-weight: 400;
   }
@@ -95,16 +95,7 @@ a{
 }
 
   @media (min-width:45em) {
-    .words{
-        padding: 4rem;
-      }
-    .decorative-image{
-      background-image: url('/assets/arch.avif');
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 95%;
-      width: 100%;
-    }
+
     .main{
       display: grid;
       grid-template-columns: repeat(2, 1fr);
