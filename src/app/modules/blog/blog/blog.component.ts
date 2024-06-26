@@ -17,11 +17,9 @@ export class BlogComponent implements OnInit {
 
   ngOnInit(): void {
     this.blogService.getblogs().subscribe(blogResponse => {
-      console.log(blogResponse.articles); // Ensure this prints an array of articles
       const blogArticles = blogResponse.articles;
   
       this.newsService.getnews().subscribe(newsResponse => {
-        console.log(newsResponse.articles); // Ensure this prints an array of articles
         const newsArticles = newsResponse.articles;
   
         // Combine blog and news articles
