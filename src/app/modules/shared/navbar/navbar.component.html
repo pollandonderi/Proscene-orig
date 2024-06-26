@@ -1,33 +1,70 @@
 <header class="primary-header flex">
     <div class="logo1 pl-12">
         <a routerLink="">
-            <img class="logo" src="assets/logo-white.png" style="height: 30px;"  alt="logo" srcset="">
+            <img class="logo" src="assets/logo-white.png" style="height: 30px;" alt="logo" srcset="">
         </a>
     </div>
-    <button aria-controls="primary-navigation" aria-expanded="false" class="mobile-nav-toggle"><span class="sr-only">Menu</span></button>
+    <button aria-controls="primary-navigation" aria-expanded="false" class="mobile-nav-toggle"><span
+            class="sr-only">Menu</span></button>
     <!-- or instead of using the span class to add the menu text you can use aria-label -->
     <nav class="space-around">
         <ul id="primary-navigation" class="primary-navigation flex" data-attribute="false">
-            <li >
+            <li>
                 <a routerLink="" class="active">
                     <span aria-hidden="true"></span>Home
                 </a>
             </li>
-           
+
             <li class="dropdown">
                 <a class="dropbtn chevron" (click)="toggleDropdown($event)">
-                        <span aria-hidden="true"></span>Solutions <ng-icon name="heroChevronDown"></ng-icon>
+                    <span aria-hidden="true"></span>Solutions <ng-icon name="heroChevronDown"></ng-icon>
                 </a>
                 <div class="dropdown-content">
                     <div class="drop-container">
                         <div class="dropdown-content-a">
-                            <a routerLink="/education">Education</a>
-                            <a routerLink="/unified-communications">Unified communications</a>
-                            <a routerLink="/meetings">Meeting solutions</a>
-                            <a routerLink="/digital-signage">Digital signage and video walls</a>
-                            <a routerLink="/government">Government projects</a>
-                            <a routerLink="/law">Law firm technology</a>
-                            <a routerLink="/religious">Religious Organisations</a>         
+                            <div class="flex-nav-icon">
+                                <div class="icon-div">
+                                    <ng-icon name="heroBookOpen"></ng-icon>
+                                </div>
+                                <a routerLink="/education"> Education</a>
+                            </div>
+                            <div class="flex-nav-icon">
+                                <div class="icon-div">
+                                    <ng-icon name="heroArrowsPointingIn"></ng-icon>
+                                </div>
+                                <a routerLink="/unified-communications"> Unified communications</a>
+                            </div>
+                            <div class="flex-nav-icon">
+                                <div class="icon-div">
+                                    <ng-icon name="heroUserGroup"></ng-icon>
+                                </div>
+                                <a routerLink="/meetings"> Meeting
+                                    solutions</a>
+                            </div>
+                            <div class="flex-nav-icon">
+                                <div class="icon-div">
+                                    <ng-icon name="heroTv"></ng-icon>
+                                </div>
+                                <a routerLink="/digital-signage"> Digital signage and video walls</a>
+                            </div>
+                            <div class="flex-nav-icon">
+                                <div class="icon-div">
+                                    <ng-icon name="heroBuildingLibrary"></ng-icon>
+                                </div>
+                                <a routerLink="/law"> Law firm technology</a>
+                            </div>
+                            <div class="flex-nav-icon">
+                                <div class="icon-div">
+                                    <ng-icon name="heroFlag"></ng-icon>
+                                </div>
+                                <a routerLink="/government"> Government projects</a>
+                            </div>
+                            <div class="flex-nav-icon">
+                                <div class="icon-div">
+                                    <ng-icon name="heroUserGroup"></ng-icon>
+                                </div>
+                                <a routerLink="/religious"> Religious Organisations</a>
+                            </div>
                         </div>
                         <div class="card-nav p-2">
                             <a class="dropbtn chevron" (click)="toggleDropdown($event)">
@@ -37,25 +74,46 @@
                                 <div class="image-nav-card pb-2"></div>
                                 <div class="words-nav-card">
                                     <h3 class="pb-2 pt-2">Partner information</h3>
-                                    <p class="pb-2" >Whether you need help from a us or would like to become a partner, we offer options to fit your business</p>
+                                    <p class="pb-2">Whether you need help from a us or would like to become a partner,
+                                        we offer options to fit your business</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
-            </li> 
+            </li>
             <li class="dropdown">
                 <a class="dropbtn chevron" (click)="toggleDropdown($event)">
-                        <span aria-hidden="true"></span>Services <ng-icon name="heroChevronDown"></ng-icon>
+                    <span aria-hidden="true"></span>Services <ng-icon name="heroChevronDown"></ng-icon>
                 </a>
                 <div class="dropdown-content">
                     <div class="drop-container">
                         <div class="dropdown-content-a">
-                    <a routerLink="/globalsupport">Support</a>
-                    <a routerLink="/collaboration-as-a-service">Collaboration as a service</a>
-                    <a routerLink="/AV-room-design">AV room design</a>
-                    <a routerLink="/professional">Professional</a>
+                            <div class="flex-nav-icon">
+                                <div class="icon-div">
+                                    <ng-icon name="heroPhone"></ng-icon>
+                                </div>
+                                <a routerLink="/globalsupport"> Support</a>
+                            </div>
+                            <div class="flex-nav-icon">
+                                <div class="icon-div">
+                                    <ng-icon name="heroReceiptRefund"></ng-icon>
+                                </div>
+                                <a routerLink="/AV-room-design"> AV-room-design</a>
+                            </div>
+                            <div class="flex-nav-icon">
+                                <div class="icon-div">
+                                    <ng-icon name="heroUserGroup"></ng-icon>
+                                </div>
+                                <a routerLink="/collaboration-as-a-service"> collaboration-as-a-service</a>
+                            </div>
+                            <div class="flex-nav-icon">
+                                <div class="icon-div">
+                                    <ng-icon name="heroPencilSquare"></ng-icon>
+                                </div>
+                                <a routerLink="/professional"> professional</a>
+                            </div>
                         </div>
                         <div class="card-nav p-2">
                             <a class="dropbtn chevron" (click)="toggleDropdown($event)">
@@ -65,26 +123,49 @@
                                 <div class="image-nav-card pb-2"></div>
                                 <div class="words-nav-card">
                                     <h3 class="pb-2 pt-2">Partner information</h3>
-                                    <p class="pb-2" >Whether you need help from a us or would like to become a partner, we offer options to fit your business</p>
+                                    <p class="pb-2">Whether you need help from a us or would like to become a partner,
+                                        we offer options to fit your business</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
-            </li> 
+            </li>
             <li class="dropdown">
                 <a class="dropbtn chevron" (click)="toggleDropdown($event)">
-                        <span aria-hidden="true"></span>Resources <ng-icon name="heroChevronDown"></ng-icon>
+                    <span aria-hidden="true"></span>Resources <ng-icon name="heroChevronDown"></ng-icon>
                 </a>
                 <div class="dropdown-content">
                     <div class="drop-container">
                         <div class="dropdown-content-a">
-                            <a routerLink="/about-us/mission">Case study</a>
-                            <a routerLink="/about-us/vision">Gides</a>
-                            <a routerLink="/about-us/team">Analytics and intelligence</a>
-                            <a routerLink="/about-us/mission">Reference design</a>
-                            <a routerLink="/about-us/vision">Events</a>
+                            <div class="flex-nav-icon">
+                                <div class="icon-div">
+                                    <ng-icon name="heroBookOpen"></ng-icon>
+                                </div>
+                                <a routerLink="/professional"> Case study</a>
+                            </div><div class="flex-nav-icon">
+                                <div class="icon-div">
+                                    <ng-icon name="heroBookOpen"></ng-icon>
+                                </div>
+                                <a routerLink="/professional"> Guides</a>
+                            </div><div class="flex-nav-icon">
+                                <div class="icon-div">
+                                    <ng-icon name="heroBookOpen"></ng-icon>
+                                </div>
+                                <a routerLink="/professional"> Analytics and intelligence</a>
+                            </div><div class="flex-nav-icon">
+                                <div class="icon-div">
+                                    <ng-icon name="heroBookOpen"></ng-icon>
+                                </div>
+                                <a routerLink="/professional"> Reference design</a>
+                            </div>
+                            <div class="flex-nav-icon">
+                                <div class="icon-div">
+                                    <ng-icon name="heroBookOpen"></ng-icon>
+                                </div>
+                                <a routerLink="/professional"> Events</a>
+                            </div>
                         </div>
                         <div class="card-nav p-2">
                             <a class="dropbtn chevron" (click)="toggleDropdown($event)">
@@ -94,12 +175,13 @@
                                 <div class="image-nav-card pb-2"></div>
                                 <div class="words-nav-card">
                                     <h3 class="pb-2 pt-2">Partner information</h3>
-                                    <p class="pb-2" >Whether you need help from a us or would like to become a partner, we offer options to fit your business</p>
+                                    <p class="pb-2">Whether you need help from a us or would like to become a partner,
+                                        we offer options to fit your business</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </li>
             <li class="active">
@@ -111,7 +193,7 @@
                 <a routerLink="/coming-soon">
                     <span aria-hidden="true" class="black"> Shop</span>
                 </a>
-            </li> 
+            </li>
             <li class="active primarymodes">
                 <a routerLink="/contact-us">
                     <span aria-hidden="true" class="black">Contact us</span>
@@ -120,6 +202,6 @@
         </ul>
         <ul id="primary-navigation" class="primary-navigation flex section2 " data-attribute="false">
             <button class="demo-button1">See demo</button>
-        </ul> 
+        </ul>
     </nav>
 </header>
