@@ -5,12 +5,11 @@
             <h1 class=" center"><span class="mr-4">Stories </span> and <span class="ml-4"> ideas</span></h1>
             <div class="first">
                 <div>
-                    <h2 class="center">Best of the week...</h2>
+                    <h2 class="center">From our partners...</h2>
                 </div>
                 <div class="center"><a routerLink="" class="demo-button">Get in touch</a></div>
             </div>
             <div class="section1">
-                <div class="flex-3">
                     <div *ngFor="let article of blogs" class="card1">
                         <img src="{{article.img}}" alt="" srcset="" style="height: 70px; aspect-ratio: 10/5;">
                         <div>
@@ -22,7 +21,6 @@
                     <app-modalnews *ngIf="isModalOpen" [article]="selectedArticle"
                         (closeEvent)="closeModal()">
                     </app-modalnews>
-                </div>
 
             </div>
         </div>
@@ -40,7 +38,6 @@
                     <p class="date pt-2 pb-2">{{article.date}}</p>
                     <h3 class="big-card-words-h">{{article.title}}</h3>
                     <p class="bigcard-words-p pt-2">{{article.content}}</p>
-                    <!-- <p>{{article.explained}}</p> -->
                     <button (click)="openModal(article)">Read More</button> <!-- Button to open modal -->
                 </div>
             </div>
