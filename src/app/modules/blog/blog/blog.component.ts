@@ -27,7 +27,6 @@ export class BlogComponent implements OnInit {
       });
     });
   }
-  
   openModal(article: any): void {
     this.selectedArticle = article;
     this.isModalOpen = true;
