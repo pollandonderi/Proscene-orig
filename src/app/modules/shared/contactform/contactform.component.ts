@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators, } from '@angular/forms';
-
+import emailjs from '@emailjs/browser';
 
 @Component({
   selector: 'app-contactform',
@@ -8,13 +8,32 @@ import { FormBuilder, FormControl, FormGroup, Validators, } from '@angular/forms
   styleUrls: ['./contactform.component.scss']
 })
 export class ContactformComponent {
-  passwordForm: FormGroup = new FormGroup({
-   
-  });
+  form: FormGroup = this.fb.group({
+    message:'',
+    subject:'',
+    pnonenumber:'',
+    from_email:'',
+    to_name:'Admin',
+    from_name:''
+  })
+  async send(){
+    emailjs.init('WtTeYCIxNDYbZa2iM')
+    let response = await emailjs.send("service_vlhicni","template_nhbbixx",{
+      from_name: this.form.value.from_name,
+      to_name: this.form.value.to_name,
+      from_email: this.form.value.from_email,
+      pnonenumber: this.form.value.phonenumber,
+      subject: this.form.value.subject,
+      message: this.form.value.message,
+      });
+
+      alert("Message has been sent");
+      this.form.reset()
+  }
     submitted = false;
     constructor(private fb: FormBuilder) {
-      this.passwordForm = fb.group({
-      name: new FormControl('', [Validators.required, Validators.minLength(3)]),
+      this.form = fb.group({
+        from_name: new FormControl('', [Validators.required, Validators.minLength(3)]),
       acceptTerms: new FormControl(false, Validators.requiredTrue),
       email: new FormControl('', [Validators.required, Validators.email]),
       phonenumber: new FormControl('', [Validators.required,  Validators.minLength(3)])
@@ -23,14 +42,15 @@ export class ContactformComponent {
     }
     get f(){
   
-      return this.passwordForm.controls;
+      return this.form.controls;
   
     }
   
     submit(){
-      if (this.passwordForm.invalid) {
+      if (this.form.invalid) {
         return;
     }
   
     }
+    
 }

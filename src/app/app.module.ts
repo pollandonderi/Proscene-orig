@@ -16,6 +16,7 @@ import { PrivacyPolicyComponent } from './components/privacy-policy/privacy-poli
 import { TermsOfUseComponent } from './components/terms-of-use/terms-of-use.component';
 import { ServicesModule } from './modules/services/services.module';
 import { LazyLoadImageModule } from 'ng-lazyload-image';
+import emailjs from '@emailjs/browser';
 
 
 @NgModule({
