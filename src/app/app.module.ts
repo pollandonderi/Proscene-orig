@@ -15,6 +15,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { PrivacyPolicyComponent } from './components/privacy-policy/privacy-policy.component';
 import { TermsOfUseComponent } from './components/terms-of-use/terms-of-use.component';
 import { ServicesModule } from './modules/services/services.module';
+import { LazyLoadImageModule } from 'ng-lazyload-image';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { ServicesModule } from './modules/services/services.module';
     TermsOfUseComponent 
   ],
   imports: [
+    LazyLoadImageModule,
     BrowserModule,
     AppRoutingModule,
     BlogModule,

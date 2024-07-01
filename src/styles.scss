@@ -22,15 +22,11 @@ $hero-title:clamp(2.5rem, 10vw + 0.5rem, 3.5rem);
   text-transform: capitalize;
   color: $the-blue;
   padding-top: 2em;
-  z-index: 2;
-  position: relative;
 }
 .hero-p{
   color: $the-blue;
   line-height: 1;
   font-weight: 900;
-  z-index: 2;
-  position: relative;
 }
 .hero-image{
   position: absolute;
@@ -49,6 +45,11 @@ $hero-title:clamp(2.5rem, 10vw + 0.5rem, 3.5rem);
   padding-bottom: 2em;
   position: relative;
   z-index: 99;
+}
+.container-words{
+  padding-inline: 2em;
+  position: relative;
+  z-index: 2;
 }
 .h2-offers{
   padding-top: 1em;
@@ -101,6 +102,7 @@ $hero-title:clamp(2.5rem, 10vw + 0.5rem, 3.5rem);
     border: 1px solid #fff;
   padding: 4px 21px;
   text-transform: capitalize;
+  cursor: pointer;
   background-color: #0a0a22;
   color: #fff;
   border-radius: 30px;

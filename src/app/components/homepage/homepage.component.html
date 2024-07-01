@@ -13,7 +13,7 @@
                 deliver outstanding audio and video experiences in any space. Our Audio and Video solutions enhance your
                 experiences whether you're working, learning, or at home..</h2>
             <p class="text-left pt-3">
-                <button class="demo-button ml-2">Connect with us!</button>
+                <a routerLink="/contact-us" class="demo-button ml-2">Connect with us!</a>
             </p>
         </div>
         
@@ -54,7 +54,7 @@
     
             </div>
             <div class="flex justify-center mt-9 mb-9">
-                <a class="demo-button ml-2" routerLink="/angular.json">See Proscene</a>
+                <a class="demo-button ml-2" routerLink="/contact-us">See Proscene</a>
             </div>
         </div>
         <div class="partner-section">
@@ -65,34 +65,34 @@
             <div class="partner-images pb-9">
                 <div class="container-p-img">
                     <div class="center pt-7 pb-7">
-                        <img src="./assets/partners/cisco.png" alt=center pt-7 pb-7 srcset="" class="w-100 partner-icon">
+                        <img [lazyLoad]="'./assets/partners/cisco.png'" loading="lazy" alt="cisco logo" srcset="" class="w-100 partner-icon">
                     </div>
                     <div class="center pt-7 pb-7">
-                        <img src="./assets/partners/CRESTRON.png" alt="" srcset="" class="w-100 partner-icon">
+                        <img [lazyLoad]="'./assets/partners/CRESTRON.png'" loading="lazy" alt="creston logo" srcset="" class="w-100 partner-icon">
                     </div>
                     <div class="center pt-7 pb-7">
-                        <img src="./assets/partners/Extron.png" alt="" srcset="" class="w-100 partner-icon">
+                        <img [lazyLoad]="'./assets/partners/Extron.png'" loading="lazy" alt="Extron logo" srcset="" class="w-100 partner-icon">
                     </div>
                     <div class="center pt-7 pb-7">
-                        <img src="./assets/partners/Google.png" alt="" srcset="" class="w-100 partner-icon">
+                        <img [lazyLoad]="'./assets/partners/Google.png'" loading="lazy" alt="Google logo" srcset="" class="w-100 partner-icon">
                     </div>
                     <div class="center pt-7 pb-7">
-                        <img src="./assets/partners/logitech.png" alt="" srcset="" class="w-100 partner-icon">
+                        <img [lazyLoad]="'./assets/partners/logitech.png'" loading="lazy" alt="logitech logo" srcset="" class="w-100 partner-icon">
                     </div>
                     <div class="center pt-7 pb-7">
-                        <img src="./assets/partners/Microsof.png" alt="" srcset="" class="w-100 partner-icon">
+                        <img [lazyLoad]="'./assets/partners/Microsof.png'" loading="lazy" alt="Microsoft logo" srcset="" class="w-100 partner-icon">
                     </div>
                     <div class="center pt-7 pb-7">
-                        <img src="./assets/partners/neat.png" alt="" srcset="" class="w-100 partner-icon">
+                        <img [lazyLoad]="'./assets/partners/neat.png'" loading="lazy" alt="neat logo" srcset="" class="w-100 partner-icon">
                     </div>
                     <div class="center pt-7 pb-7">
-                        <img src="./assets/partners/Zoom.png" alt="" srcset="" class="w-100 partner-icon">
+                        <img [lazyLoad]="'./assets/partners/Zoom.png'" loading="lazy" alt="Zoom logo" srcset="" class="w-100 partner-icon">
                     </div>
                     <div class="center pt-7 pb-7">
-                        <img src="./assets/partners/Poly.png" alt="" srcset="" class="w-100 partner-icon">
+                        <img [lazyLoad]="'./assets/partners/Poly.png'" loading="lazy" alt="Poly logo" srcset="" class="w-100 partner-icon">
                     </div>
                     <div class="center pt-7 pb-7">
-                        <img src="./assets/partners/QSYS.png" alt="" srcset="" class="w-100 partner-icon">
+                        <img  [lazyLoad]="'./assets/partners/QSYS.png'" loading="lazy" alt="QSYS logo" srcset="" class="w-100 partner-icon">
                     </div>
                 </div>
             </div>
@@ -105,16 +105,16 @@
                     <p class="p-solutions pt2 pb-4">Ease of use is a central tenet of Proscene. We believe it should be
                         easy to
                         get started, easy to integrate, and simple to switch from existing systems and processes. </p>
-                    <div class=" center center1"><a routerLink="solutions" class="picture-link pb-9">Our Expertise ></a></div>
+                    <div class=" center center1"><a routerLink="/collaboration-as-a-service" class="picture-link pb-9">Our Expertise ></a></div>
                 </div>
             </div>
             <div class="section-image center p-3">
-                <img src="/assets/Ourexpertise1.png" alt="" srcset="">
+                <img [lazyLoad]="'/assets/Ourexpertise1.png'" loading="lazy" alt="A woman in n online meeting" srcset="">
             </div>
         </div>
         <div class="picture-section mt-9" style="background-color: #f4f4f4d5;">
             <div class="section-image center p-3">
-                <img src="/assets/smilingwoman.jpg" alt="" srcset="">
+                <img [lazyLoad]="'/assets/smilingwoman.jpg'" loading="lazy" alt="A woman smiling" srcset="">
             </div>
             <div class="section1 flex justify-center items-center">
                 <div>
@@ -123,7 +123,7 @@
                     <p class="p-solutions pt2 pb-4"> Proscene’s interoperability with popular video
                         conferencing solutions allows for seamless communication. Connect with Learning Management
                         Systems for the complete learning experience. Record meetings from Zoom, Teams, and Webex. </p>
-                    <div class=" center center1"><a routerLink="solutions" class="picture-link pb-9">Learn More ></a></div>
+                    <div class=" center center1"><a routerLink="/unified-communications" class="picture-link pb-9">Learn More ></a></div>
                 </div>
             </div>
     
@@ -132,22 +132,21 @@
     
             <div class="section1 flex justify-center items-center">
                 <div>
-                    <h3 class="h3-solutions pt-3 pb-4">Seamless integration with the tools you already use.
+                    <h3 class="h3-solutions pt-3 pb-4">Seamless integration into meeeting rooms.
                     </h3>
-                    <p class="p-solutions pt2 pb-4"> Proscene’s interoperability with popular video
-                        conferencing solutions allows for seamless communication. Connect with Learning Management
+                    <p class="p-solutions pt2 pb-4"> Proscene’s design team offers solutions allowing for seamless integration into your work places. Connect with Learning Management
                         Systems for the complete learning experience. Record meetings from Zoom, Teams, and Webex. </p>
-                    <div class=" center center1"><a routerLink="solutions" class="picture-link pb-9">Learn More ></a></div>
+                    <div class=" center center1"><a routerLink="/AV-room-design" class="picture-link pb-9">Learn More ></a></div>
                 </div>
             </div>
             <div class="section-image center p-3">
-                <img src="/assets/university.jpg" alt="" srcset="">
+                <img src="" [lazyLoad]="'/assets/university.jpg'" loading="lazy" alt="A university student or students" srcset="">
             </div>
     
         </div>
         <div class="picture-section mt-9" style="background-color: #f4f4f4d5;">
             <div class="section-image center p-3">
-                <img src="/assets/collaboration.jpg" alt="" srcset="" style=" width: 100%; max-width: 600px;">
+                <img [lazyLoad]="'/assets/collaboration.jpg'" loading="lazy" alt="A picture showing people collaborating in a meeting" srcset="" style=" width: 100%; max-width: 600px;">
             </div>
     
             <div class="section1 flex justify-center items-center">
@@ -156,11 +155,10 @@
                     </h3>
                     <p class="p-solutions pt2 pb-4"> Integrate with Content Management Systems for a holistic content experience. Archive meetings from Skype, Google Meet, and GoToMeeting
                         Our platform offers the ability to disseminate organizational knowledge with solutions that are intuitive, comprehensive, and widely accepted.. </p>
-                    <div class=" center center1"><a routerLink="solutions" class="picture-link pb-9">Learn More ></a></div>
+                    <div class=" center center1"><a routerLink="/collaboration-as-a-service" class="picture-link pb-9">Learn More ></a></div>
                 </div>
             </div>
         </div>
-        <!-- contains repetitive content is to be corrected -->
         <div class="use">
             <h3 class="h3-solutions pt-9 pb-4 center">How Organizations Use Proscene.</h3>
             <div class="use-cards">
@@ -205,7 +203,7 @@
     
         </div>
         <div class="center">
-            <iframe class="video-content" width="100%" src="https://www.youtube.com/embed/Rd3Mbl9d1SA"
+            <iframe class="video-content" width="100%" src="https://www.youtube.com/embed/Rd3Mbl9d1SA" loading="lazy"
                     title="What Does An Audio Visual Technician Do?" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>

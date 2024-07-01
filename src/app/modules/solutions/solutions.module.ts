@@ -11,6 +11,7 @@ import { SharedModule } from '../shared/shared.module';
 import { NgIconsModule } from '@ng-icons/core';
 import { heroArrowDown, heroCubeTransparent } from '@ng-icons/heroicons/outline';
 import { AppRoutingModule } from 'src/app/app-routing.module';
+import { LazyLoadImageModule } from 'ng-lazyload-image';
 
 
 
@@ -28,6 +29,7 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
   ],
   imports: [
     CommonModule,
+    LazyLoadImageModule,
     SharedModule,
     AppRoutingModule,
     NgIconsModule.withIcons({heroCubeTransparent,heroArrowDown}),

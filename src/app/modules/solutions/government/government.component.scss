@@ -1,6 +1,7 @@
 @import 'src/themes.scss';
 a{
     color: #166ef1;
+    cursor: pointer;
 }
 .header-p{
     color: $the-blue !important;
@@ -8,10 +9,6 @@ a{
 .hero{
     position: relative;
     height: 100vh;
-}
-.container-words{
-    padding-inline: 2em;
-    z-index: 2;
 }
 .options{
     display: grid;
