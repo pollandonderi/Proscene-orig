@@ -9,6 +9,8 @@ import { heroBars3CenterLeft, heroBookOpen, heroBriefcase, heroBuildingLibrary, 
 import { ContactformComponent } from './contactform/contactform.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ComingSoonComponent } from './coming-soon/coming-soon.component';
+import { NewsletterComponent } from './newsletter/newsletter.component';
+import { SolutionsModule } from '../solutions/solutions.module';
 
 
 
@@ -18,12 +20,14 @@ import { ComingSoonComponent } from './coming-soon/coming-soon.component';
     PageNotFoundComponent,
     FooterComponent,
     ContactformComponent,
-    ComingSoonComponent
+    ComingSoonComponent,
+    NewsletterComponent
   ],
   exports: [
     NavbarComponent,
     FooterComponent,
     ContactformComponent,
+    NewsletterComponent
 
   ],
   imports: [

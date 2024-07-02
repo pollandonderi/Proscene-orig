@@ -19,13 +19,14 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
 import emailjs from '@emailjs/browser';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
     FormComponent,
     PrivacyPolicyComponent,
-    TermsOfUseComponent 
+    TermsOfUseComponent,
   ],
   imports: [
     LazyLoadImageModule,

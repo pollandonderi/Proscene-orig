@@ -1,0 +1,17 @@
+@import 'src/themes.scss';
+
+input{
+    padding: .8em;
+    color: black;
+    border-radius: 20px;
+}
+.a-1{
+    background-color: $yellowish;
+    padding: .9em;
+    border-radius: 20px;
+}
+.sub{
+    background-color: $the-blue;
+    color: white;
+    padding-block: 1em;
+}

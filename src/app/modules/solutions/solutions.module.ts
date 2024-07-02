@@ -24,7 +24,7 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
     DigitalComponent,
     GovernmentComponent,
     LawComponent,
-    ReligiousComponent,
+    ReligiousComponent
     
   ],
   imports: [
