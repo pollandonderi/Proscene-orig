@@ -4,105 +4,105 @@
       <h2 class="sub-container-h2 pl-9 pb-9" style="color: white;">Talk to a sales expert</h2>
       <div class="login-main-container">
           <div class="form-container">
-            <form class="form" [formGroup]="passwordForm" (ngSubmit)="submit()">
+            <form class="form" [formGroup]="form" (ngSubmit)="send()">
                 <label for="">Your Name</label>
-                <input type="text" formControlName="name" id="Yourname" />
+                <input type="text" formControlName="from_name" id="from_name" />
                 <div
-                  *ngIf="f['name'].touched && f['name'].invalid"
+                  *ngIf="f['from_name'].touched && f['from_name'].invalid"
                   class="alert alert-danger"
                 >
-                  <div *ngIf="f['name'].errors && f['name'].errors['required']">
+                  <div *ngIf="f['from_name'].errors && f['from_name'].errors['required']">
                     Name is required.
                   </div>
-                  <div *ngIf="f['name'].errors && f['name'].errors['minlength']">
+                  <div *ngIf="f['from_name'].errors && f['from_name'].errors['minlength']">
                     Name should be 3 character.
                   </div>
                 </div>
                 <label for="">Your email</label>
-                <input type="email" name="" id="" formControlName="email" />
+                <input type="email" name="from_email" id="from_email" formControlName="from_email" />
                 <div
-                  *ngIf="f['email'].touched && f['email'].invalid"
+                  *ngIf="f['from_email'].touched && f['from_email'].invalid"
                   class="alert alert-danger"
                 >
-                  <div *ngIf="f['email'].errors && f['email'].errors['required']">
-                    Email is required.
+                  <div *ngIf="f['from_email'].errors && f['from_email'].errors['required']">
+                    email is required.
                   </div>
       
-                  <div *ngIf="f['email'].errors && f['email'].errors['email']">
+                  <div *ngIf="f['from_email'].errors && f['from_email'].errors['from_email']">
                     Please, enter valid email address.
                   </div>
                 </div>
                 <label for="">Your Phone number</label>
-                <input type="number" name="" id="" formControlName="phonenumber" />
+                <input type="number" name="pnonenumber" id="pnonenumber" formControlName="pnonenumber" />
                 <div
-                  *ngIf="f['phonenumber'].touched && f['phonenumber'].invalid"
+                  *ngIf="f['pnonenumber'].touched && f['pnonenumber'].invalid"
                   class="alert alert-danger"
                 >
-                  <div *ngIf="f['phonenumber'].errors && f['phonenumber'].errors['required']">
+                  <div *ngIf="f['pnonenumber'].errors && f['pnonenumber'].errors['required']">
                     Phone Number is required.
                   </div>
       
-                  <div *ngIf="f['phone-number'].errors && f['phone-number'].errors['phone-number']">
+                  <div *ngIf="f['pnonenumber'].errors && f['pnonenumber'].errors['pnonenumber']">
                     Please, enter valid phone number.
                   </div>
                 </div>
                 <label for="">What can we do for you today?</label>
-                <input type="text" name="name" id="" formControlName="" />
+                <input type="text" name="subject" id="subject" formControlName="subject" />
                 <div
-                  *ngIf="f['name'].touched && f['name'].invalid"
+                  *ngIf="f['subject'].touched && f['subject'].invalid"
                   class="alert alert-danger"
                 >
-                  <div *ngIf="f['name'].errors && f['name'].errors['required']">
+                  <div *ngIf="f['subject'].errors && f['subject'].errors['required']">
                     answer is required
                   </div>
                 </div>
                 <label for="">Company?</label>
-                <input type="text" name="name" id="" formControlName="" />
+                <input type="text" name="company" id="company" formControlName="company" />
                 <div
-                  *ngIf="f['name'].touched && f['name'].invalid"
+                  *ngIf="f['company'].touched && f['company'].invalid"
                   class="alert alert-danger"
                 >
-                  <div *ngIf="f['name'].errors && f['name'].errors['required']">
+                  <div *ngIf="f['company'].errors && f['company'].errors['required']">
                     answer is required
                   </div>
                 </div>
                 <label for="">Job function?</label>
-                <input type="text" name="name" id="" formControlName="" />
+                <input type="text" name="jobfunction" id="jobfunction" formControlName="jobfunction" />
                 <div
-                  *ngIf="f['name'].touched && f['name'].invalid"
+                  *ngIf="f['jobfunction'].touched && f['jobfunction'].invalid"
                   class="alert alert-danger"
                 >
-                  <div *ngIf="f['name'].errors && f['name'].errors['required']">
+                  <div *ngIf="f['jobfunction'].errors && f['jobfunction'].errors['required']">
                     answer is required
                   </div>
                 </div>
                 <label for="">Department?</label>
-                <input type="text" name="name" id="" formControlName="" />
+                <input type="text" name="department" id="department" formControlName="department" />
                 <div
-                  *ngIf="f['name'].touched && f['name'].invalid"
+                  *ngIf="f['department'].touched && f['department'].invalid"
                   class="alert alert-danger"
                 >
-                  <div *ngIf="f['name'].errors && f['name'].errors['required']">
+                  <div *ngIf="f['department'].errors && f['department'].errors['required']">
                     answer is required
                   </div>
                 </div>
                 <label for="">Country</label>
-                <input type="text" name="name" id="" formControlName="" />
+                <input type="text" name="country" id="country" formControlName="country" />
                 <div
-                  *ngIf="f['name'].touched && f['name'].invalid"
+                  *ngIf="f['country'].touched && f['country'].invalid"
                   class="alert alert-danger"
                 >
-                  <div *ngIf="f['name'].errors && f['name'].errors['required']">
+                  <div *ngIf="f['country'].errors && f['country'].errors['required']">
                     answer is required
                   </div>
                 </div>
                 <label for="">Would you like a callback?</label>
-                <input type="text" name="name" id="" formControlName="" />
+                <input type="text" name="message" id="message" formControlName="message" />
                 <div
-                  *ngIf="f['name'].touched && f['name'].invalid"
+                  *ngIf="f['message'].touched && f['message'].invalid"
                   class="alert alert-danger"
                 >
-                  <div *ngIf="f['name'].errors && f['name'].errors['required']">
+                  <div *ngIf="f['message'].errors && f['message'].errors['required']">
                     answer is required
                   </div>
                 </div>
