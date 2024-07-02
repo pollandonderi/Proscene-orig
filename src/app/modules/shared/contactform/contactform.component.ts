@@ -34,9 +34,11 @@ export class ContactformComponent {
     constructor(private fb: FormBuilder) {
       this.form = fb.group({
         from_name: new FormControl('', [Validators.required, Validators.minLength(3)]),
-      acceptTerms: new FormControl(false, Validators.requiredTrue),
-      email: new FormControl('', [Validators.required, Validators.email]),
-      phonenumber: new FormControl('', [Validators.required,  Validators.minLength(3)])
+        to_name: new FormControl(false, Validators.requiredTrue),
+        from_email: new FormControl('', [Validators.required, Validators.email]),
+      pnonenumber: new FormControl('', [Validators.required,  Validators.minLength(3)]),
+      message: new FormControl('', [Validators.required, Validators.minLength(3)]),
+        subject: new FormControl('', [Validators.required, Validators.minLength(3)]),
   
       });
     }
