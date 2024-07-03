@@ -2,6 +2,20 @@
 $smallest-h2:clamp(1.2656rem, 1.0692rem + 0.9822vw, 1.99rem);
 $smallest-h3: clamp(1rem, 1.0661rem + 0.5695vw, 1.65rem);
 $h4-small:clamp(1rem, 0.9661rem + 0.1695vw, 1.125rem);
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $yellowish;
+    color: $the-blue;
+    text-transform: uppercase;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 1000;
+}
 main{
     width: 100%;
     padding-top: 5em;
@@ -109,9 +123,6 @@ h4{
     justify-content: flex-start;
 
 }
-
-
-
 @media (min-width:45em) {
     .main{
         display: grid;
