@@ -9,11 +9,13 @@
     <!-- or instead of using the span class to add the menu text you can use aria-label -->
     <nav class="space-around">
         <ul id="primary-navigation" class="primary-navigation flex" data-attribute="false">
-            <li>
+            
                 <a routerLink="" class="active">
+                    <li>
                     <span aria-hidden="true"></span>Home
+                </li>
                 </a>
-            </li>
+            
 
             <li class="dropdown">
                 <a class="dropbtn chevron" (click)="toggleDropdown($event)" routerLink="">
@@ -143,18 +145,27 @@
                                 <div class="icon-div">
                                     <ng-icon name="heroBookOpen"></ng-icon>
                                 </div>
+                                <a routerLink="/blog">Blog</a>
+                            </div>
+                            <div class="flex-nav-icon">
+                                <div class="icon-div">
+                                    <ng-icon name="heroBookOpen"></ng-icon>
+                                </div>
                                 <a routerLink="/professional"> Case study</a>
-                            </div><div class="flex-nav-icon">
+                            </div>
+                            <div class="flex-nav-icon">
                                 <div class="icon-div">
                                     <ng-icon name="heroBookOpen"></ng-icon>
                                 </div>
                                 <a routerLink="/professional"> Guides</a>
-                            </div><div class="flex-nav-icon">
+                            </div>
+                            <div class="flex-nav-icon">
                                 <div class="icon-div">
                                     <ng-icon name="heroBookOpen"></ng-icon>
                                 </div>
                                 <a routerLink="/professional"> Analytics and intelligence</a>
-                            </div><div class="flex-nav-icon">
+                            </div>
+                            <div class="flex-nav-icon">
                                 <div class="icon-div">
                                     <ng-icon name="heroBookOpen"></ng-icon>
                                 </div>
@@ -183,11 +194,6 @@
                     </div>
 
                 </div>
-            </li>
-            <li class="active">
-                <a routerLink="/blog">
-                    <span aria-hidden="true"></span>Blog
-                </a>
             </li>
             <li class="active primarymodes pl-2">
                 <a routerLink="/coming-soon">

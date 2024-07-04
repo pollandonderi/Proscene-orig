@@ -17,6 +17,7 @@ import { TermsOfUseComponent } from './components/terms-of-use/terms-of-use.comp
 import { ServicesModule } from './modules/services/services.module';
 import { LazyLoadImageModule } from 'ng-lazyload-image';
 import emailjs from '@emailjs/browser';
+import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 
 
 
@@ -27,6 +28,7 @@ import emailjs from '@emailjs/browser';
     FormComponent,
     PrivacyPolicyComponent,
     TermsOfUseComponent,
+    TestimonialsComponent,
   ],
   imports: [
     LazyLoadImageModule,

@@ -1,0 +1,48 @@
+@import '/src/themes.scss';
+.testimony{
+    background-color: #084c6105;
+    padding-inline: 2rem;
+    display: grid;
+    padding-block: 4rem;
+    margin-block: 4rem;
+}
+.test-card{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 20px;
+}
+.testimonial{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    justify-items:center;
+    align-items:center;
+    padding-inline:2em;
+    width:min(50%, 800px)
+      p{
+        text-wrap:balance;
+  }
+  }
+  .testimonial-image{
+    
+  width:70px;
+    aspect-ratio:1;
+    border-radius:50% ;
+  }
+  .testimonial-p::before{
+    content:open-quote;
+    font-size:4rem;
+    position:absolute;
+    top:2rem;
+    
+  }
+  .test-h4{
+    color: $secondary;
+    padding-block: 1rem;
+  }
+@media (min-width:45em) {
+    .testimony{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+    }
+}

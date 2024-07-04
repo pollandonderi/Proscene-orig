@@ -5,7 +5,7 @@
         <app-navbar></app-navbar>
         
             <video id="background-video" autoplay loop muted>
-                <source src="/assets/back3.mp4" type="video/mp4">
+                <source src="/assets/back4.mp4" type="video/mp4">
         </video>
         <div class="container mx-auto px-2 margin-push">
             <h1 class="background-video-h1 header-hero">Digitally empowering how we <span class="span">work</span>, learn and live .</h1>
@@ -100,27 +100,27 @@
         <div class="picture-section">
             <div class="section1 flex justify-center items-center">
                 <div>
-                    <h3 class="h3-solutions pt-3 pb-4">Simplify your video workflows
+                    <h3 class="h3-solutions pt-3 pb-11">Simplify your video workflows
                     </h3>
-                    <p class="p-solutions pt2 pb-4">Ease of use is a central tenet of Proscene. We believe it should be
+                    <p class="p-solutions pt2 pb-11">Ease of use is a central tenet of Proscene. We believe it should be
                         easy to
                         get started, easy to integrate, and simple to switch from existing systems and processes. </p>
                     <div class=" center center1"><a routerLink="/collaboration-as-a-service" class="picture-link pb-9">Our Expertise ></a></div>
                 </div>
             </div>
             <div class="section-image center p-3">
-                <img [lazyLoad]="'/assets/Ourexpertise1.png'" loading="lazy" alt="A woman in n online meeting" srcset="">
+                <img [lazyLoad]="'/assets/file.png'" loading="lazy" alt="A picture showing the meeting apps" srcset="">
             </div>
         </div>
-        <div class="picture-section mt-9" style="background-color: #f4f4f4d5;">
+        <div class="picture-section mt-9">
             <div class="section-image center p-3">
-                <img [lazyLoad]="'/assets/smilingwoman.jpg'" loading="lazy" alt="A woman smiling" srcset="">
+                <img [lazyLoad]="'/assets/integ (2).png'" loading="lazy" alt="A woman smiling" srcset="">
             </div>
             <div class="section1 flex justify-center items-center">
                 <div>
-                    <h3 class="h3-solutions pt-3 pb-4">Seamless integration with the tools you already use.
+                    <h3 class="h3-solutions pt-3 pb-11">Seamless integration with the tools you already use.
                     </h3>
-                    <p class="p-solutions pt2 pb-4"> Proscene’s interoperability with popular video
+                    <p class="p-solutions pt2 pb-11"> Proscene’s interoperability with popular video
                         conferencing solutions allows for seamless communication. Connect with Learning Management
                         Systems for the complete learning experience. Record meetings from Zoom, Teams, and Webex. </p>
                     <div class=" center center1"><a routerLink="/unified-communications" class="picture-link pb-9">Learn More ></a></div>
@@ -132,35 +132,35 @@
     
             <div class="section1 flex justify-center items-center">
                 <div>
-                    <h3 class="h3-solutions pt-3 pb-4">Seamless integration into meeeting rooms.
+                    <h3 class="h3-solutions pt-3 pb-11">Seamless integration into meeeting rooms.
                     </h3>
-                    <p class="p-solutions pt2 pb-4"> Proscene’s design team offers solutions allowing for seamless integration into your work places. Connect with Learning Management
+                    <p class="p-solutions pt2 pb-11"> Proscene’s design team offers solutions allowing for seamless integration into your work places. Connect with Learning Management
                         Systems for the complete learning experience. Record meetings from Zoom, Teams, and Webex. </p>
                     <div class=" center center1"><a routerLink="/AV-room-design" class="picture-link pb-9">Learn More ></a></div>
                 </div>
             </div>
             <div class="section-image center p-3">
-                <img src="" [lazyLoad]="'/assets/university.jpg'" loading="lazy" alt="A university student or students" srcset="">
+                <img src="" [lazyLoad]="'/assets/meeting.jpg'" loading="lazy" alt="A university student or students" srcset="">
             </div>
     
         </div>
-        <div class="picture-section mt-9" style="background-color: #f4f4f4d5;">
+        <div class="picture-section mt-9">
             <div class="section-image center p-3">
-                <img [lazyLoad]="'/assets/collaboration.jpg'" loading="lazy" alt="A picture showing people collaborating in a meeting" srcset="" style=" width: 100%; max-width: 600px;">
+                <img [lazyLoad]="'/assets/screens(1).png'" loading="lazy" alt="A picture showing people collaborating in a meeting" srcset="" style=" width: 100%; max-width: 600px;">
             </div>
     
             <div class="section1 flex justify-center items-center">
                 <div>
-                    <h3 class="h3-solutions pt-3 pb-4">Effortless collaboration with your favorite platforms.
+                    <h3 class="h3-solutions pt-3 pb-11" >Effortless collaboration with your favorite platforms.
                     </h3>
-                    <p class="p-solutions pt2 pb-4"> Integrate with Content Management Systems for a holistic content experience. Archive meetings from Skype, Google Meet, and GoToMeeting
+                    <p class="p-solutions pt2 pb-11"> Integrate with Content Management Systems for a holistic content experience. Archive meetings from Skype, Google Meet, and GoToMeeting
                         Our platform offers the ability to disseminate organizational knowledge with solutions that are intuitive, comprehensive, and widely accepted.. </p>
                     <div class=" center center1"><a routerLink="/collaboration-as-a-service" class="picture-link pb-9">Learn More ></a></div>
                 </div>
             </div>
         </div>
         <div class="use">
-            <h3 class="h3-solutions pt-9 pb-4 center">How Organizations Use Proscene.</h3>
+            <h3 class="h3-solutions pt-9 pb-4 center" style="color: white !important;">How Organizations Use Proscene.</h3>
             <div class="use-cards">
                 <div class="use-card1 center flex-col">
                     <ng-icon name="heroLockClosed" class="icons"></ng-icon>
@@ -196,23 +196,14 @@
                 </div>
             </div>
         </div>
-        <div class="testament-section center flex-col mt-9 mb-9 p-9" style="background-color: #f4f4f4d5;">
-            <p class="testament-p">" Our mission is to design and implement custom audio visual solutions that help organizations communicate, collaborate, and engage more effectively, while providing exceptional service and support to our clients"</p>
-            <p>Wilkins Michira</p>
-            <ng-icon name="heroCheck" class="icons1"></ng-icon>
-    
-        </div>
+        <app-testimonials></app-testimonials>
         <div class="center">
             <iframe class="video-content" width="100%" src="https://www.youtube.com/embed/Rd3Mbl9d1SA" loading="lazy"
                     title="What Does An Audio Visual Technician Do?" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
         </div>
-        <div class="testament-section center flex-col mt-9 mb-9 p-9" style="background-color: #f4f4f4d5;">
-            <p class="testament-p">" Experiencing the services of this audio visual company has been truly transformative. Their custom solutions have revolutionized our communication and collaboration processes, making them more efficient and effective. The exceptional service and support they provide is simply unparalleled. We couldn’t be more satisfied!"</p>
-            <p>Joy Dasi</p>
-            <ng-icon name="heroCheck" class="icons1"></ng-icon>
-        </div>
+        
         <div class="blog-home">
             <h3 class="h3-solutions pt-3 pb-4 text-center">Industry analysts agree:<br>
                 Proscene is a leader in enterprise solutions .</h3>
@@ -220,12 +211,6 @@
                 <div class="flex justify-center mt-6 mb-6">
                     <a class="demo-button mt-6 mb-6 pb-2" style="padding-bottom: 7px;" routerLink="/blog">Discover More</a>
                 </div>
-        </div>
-        <div class="picture-section mt-9 center flex-col" style="background-color: #f4f4f4d5;">
-            <h3 class="h3-solutions pt-3 pb-4 text-center">See Proscene.</h3>
-                <p class="p-solutions1 pt-9 pb-4 text-center" style="max-width: 800px;">Want to see Proscene for yourself? Just complete the form below. Our team will answer your questions, share a quick demo, and set you up with a free trial of our video platform.</p>
-                <span>You can aso call us on 0724640020</span>
-                
         </div>
         <div style="background-color: #f4f4f4d5;" class="pb-12">
             <app-contactform></app-contactform>

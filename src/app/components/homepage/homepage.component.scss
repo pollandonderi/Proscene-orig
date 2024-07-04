@@ -1,13 +1,12 @@
 @import 'src/themes.scss';
-
 img{
     border-radius: 10px;
 }
+.container{
+    height: 100vh !important;
+}
 .body-outer{
     width: 100%;
-}
-.margin-push{
-    margin-bottom: 5rem;
 }
 #background-video {
     width: 100%;
@@ -34,7 +33,7 @@ img{
  
  .header-hero{
     color: $white;
-    padding-top: 17vh;
+    padding-top: 12vh;
     font-weight: 700;
     font-size: clamp(2.5rem, 10vw + 0.5rem, 3.5rem);
     text-transform: capitalize;
@@ -45,16 +44,19 @@ img{
 .icons1{
     font-size: 40px;
 }
+.solutions{
+    padding-top: 2rem;
+}
 .h3-solutions{
-    color: $the-blue;
-font-size: clamp(1.8em ,2.2em, 2.5em);
+    color: $secondary;
+font-size: clamp(1.4238rem, 1.0921rem + 1.6585vw, 2.6469rem);
   line-height: 3rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 .h4-solutions{
   font-size: 1.72rem;
-  font-weight: 600;
-  color: #323232;
+  font-weight: 500;
+  color: rgb(28, 32, 34);
   padding-block: 1em;
   
 }
@@ -65,7 +67,9 @@ font-size: clamp(1.8em ,2.2em, 2.5em);
     align-items: center;
 }
 .partner-section{
-    background-color: #f4f4f4d5;
+    background:linear-gradient(to bottom, #ffffff, #084c6118);
+    margin-inline: 1.5rem;
+    border-radius: 10px;
 }
 .partner-icon{
     max-width: 160px;
@@ -84,24 +88,28 @@ font-size: clamp(1.8em ,2.2em, 2.5em);
     padding-inline: 1em;
     text-align: center;
 }
-.picture-link{
-    color: #0a58ca;
-    font-weight: 300;
+.section-image{
+    width:min(80%, 400px) ;
 }
-.testament-p{
-    padding-block: 2em;
-    max-width: 600px;
-    text-align: center;
-    font-size: 1.56em;
-    font-family: thin;
+.picture-link{
+    color: $tertiary;
+    font-weight: 400;
 }
 .video-content{
     padding-block: 2em;
     max-width: 800px;
     aspect-ratio: 1; 
 }
+.use{
+    background-color: #084C61; 
+    color: white;
+    border-radius: 10px;
+}
 
 @media (min-width:35em) and (max-width:59em) {
+    .use{
+        margin-inline: 2rem;
+    }
     .header-hero{
         color: $white;
         padding-top: 30vh;
@@ -109,6 +117,8 @@ font-size: clamp(1.8em ,2.2em, 2.5em);
     .picture-section{
         display: flex;
         justify-content: center;
+        width: min(80%,1200px);
+    margin: 0 auto;
     }
     .use-cards{
         display: grid;
@@ -117,6 +127,9 @@ font-size: clamp(1.8em ,2.2em, 2.5em);
     
 }
 @media (min-width:60em) {
+    .use{
+        margin-inline: 2rem;
+    }
     .header-hero{
         padding-top: 25vh;
         width: 60%;
@@ -136,6 +149,8 @@ font-size: clamp(1.8em ,2.2em, 2.5em);
         display: flex;
         justify-content: center;
         padding-block: 3em;
+        width: min(90%,1300px);
+    margin: 0 auto;
     }
     .section1{
         text-align: start;
@@ -143,10 +158,14 @@ font-size: clamp(1.8em ,2.2em, 2.5em);
     }
     .center1{
         justify-content: start;
+       
     }
     .use-cards{
         display: grid;
         padding-block: 4em;
         grid-template-columns: repeat(4, 1fr);
+    }
+    .solutions{
+        padding-top: 2rem;
     }
 }
