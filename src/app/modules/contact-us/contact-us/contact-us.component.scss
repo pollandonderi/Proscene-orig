@@ -37,7 +37,7 @@ main{
     background-color: #f3f3f3;
     width: calc(min(90%, 600px));
     border-radius: 15px;
-    color:#0a0a22 ;
+    color:$secondary ;
 }
 :is(input){
     padding-block: .6em;
@@ -55,10 +55,10 @@ main{
 }
 :is(button:hover){
     background-color: #fff;
-    color: #0a0a22;
+    color: $secondary;
 }
 .alert{
-    color: #0a0a22;
+    color: $secondary;
 }
 .form{
     display: flex;

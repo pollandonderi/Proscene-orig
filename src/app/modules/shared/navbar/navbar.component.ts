@@ -26,32 +26,33 @@ export class NavbarComponent implements OnInit {
 
     // Close dropdowns when clicking outside
     document.addEventListener('click', (event) => {
-      let isClickInside = primaryNav?.contains(event.target as Node);
-      if (!isClickInside) {
+      const target = event.target as HTMLElement;
+      if (!primaryNav?.contains(target) && !target.closest('.dropdown-content')) {
         this.closeAllDropdowns();
       }
     });
   }
 
   closeAllDropdowns(): void {
-    let dropdowns = document.getElementsByClassName("dropdown-content");
-    for (let i = 0; i < dropdowns.length; i++) {
-        let openDropdown = dropdowns[i] as HTMLElement;
-        if (openDropdown.style.display === "block") {
-            openDropdown.style.display = "none";
-        }
-    }
+    const dropdowns = document.querySelectorAll(".dropdown-content");
+    dropdowns.forEach(dropdown => {
+      (dropdown as HTMLElement).style.display = "none";
+    });
   }
 
   toggleDropdown(event: Event): void {
+    event.stopPropagation(); // Prevent click event from propagating
+
     // Close all other dropdowns
     this.closeAllDropdowns();
 
     // Open the clicked dropdown
-    let dropdownBtn = event.target as HTMLElement;
-    let dropdownContent = dropdownBtn.nextElementSibling as HTMLElement | null;
-    if (dropdownContent !== null) {
-        dropdownContent.style.display = "block";
+    const dropdownBtn = event.currentTarget as HTMLElement;
+    const dropdownContent = dropdownBtn.nextElementSibling as HTMLElement;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
     }
   }
 }

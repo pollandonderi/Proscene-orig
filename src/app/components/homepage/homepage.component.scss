@@ -90,6 +90,7 @@ font-size: clamp(1.4238rem, 1.0921rem + 1.6585vw, 2.6469rem);
 }
 .section-image{
     width:min(80%, 400px) ;
+    margin: 0 auto;
 }
 .picture-link{
     color: $tertiary;
