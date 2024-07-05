@@ -96,10 +96,10 @@ h5{
         background-repeat: no-repeat;
     }
     .images-back1{
-        background-image: url('/assets/monitor.jpeg');
+        background-image: url('/assets/ideas.avif');
     }
     .images-back2{
-        background-image: url('/assets/smilingwoman.jpg');
+        background-image: url('/assets/report.jpg');
     }
     .images-back3{
         background-image: url('/assets/screens.png');
@@ -108,6 +108,10 @@ h5{
 @media (min-width:35em) and (max-width:59em) {
     .hero{
         padding-bottom: 6rem;
+    }
+    .container-words{
+        width: 50%;
+        height: 100vh;
     }
     .solutions{
         display: grid;
@@ -130,6 +134,7 @@ h5{
     }  
     .container-words{
         width: 50%;
+        height: 100vh;
     }
     .hero-p2{
         padding-bottom: 2em;

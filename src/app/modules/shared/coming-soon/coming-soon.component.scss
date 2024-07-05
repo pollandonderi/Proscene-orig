@@ -4,7 +4,7 @@ $p-small:clamp(1.2656rem, 1.0692rem + 0.9822vw, 1.99rem);
 
 main{
     height: 100dvh;
-    background-color: $the-blue;
+    background-color: $secondary;
     color: white;
     display: flex;
     justify-content: center;
@@ -23,14 +23,13 @@ main{
         font-size: $p-small;
     }
     .form{
-        // background-color: white;
         gap: 1em;
         display: flex;
   border-radius: 20px;
     }
     input{
         padding: .8em;
-        color: black;
+        color: $secondary;
         border-radius: 20px;
     }
     a{
