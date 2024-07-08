@@ -1,4 +1,8 @@
 @import 'src/themes.scss';
+.hero-title{
+    font-size: clamp(2.5rem, 4vw + 0.5rem, 3.5rem) !important;
+    color: black;
+}
 .hero{
     position: relative;
     height: 100vh;
@@ -74,7 +78,6 @@ h5{
 
 }
 .form{
-    // background-color: white;
     gap: 1em;
     display: flex;
 border-radius: 20px;
@@ -153,6 +156,9 @@ input{
     }
 }
 @media (min-width:35em) and (max-width:59em) {
+    .hero-title{
+        color: $the-blue;
+    }
     .solutions{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -188,6 +194,9 @@ input{
 }
 
 @media (min-width:60em) {
+    .hero-title{
+        color: $the-blue;
+    }
     .hero-image{
     -webkit-mask-image: linear-gradient(to left, black, black 10%, transparent);
     mask-image: linear-gradient(to left, black, black 10%, transparent);     

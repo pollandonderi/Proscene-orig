@@ -1,9 +1,9 @@
 @import 'src/themes.scss';
-.header-p{
-    color: $the-blue !important;
+.hero-title{
+    color:black;
 }
-a{
-    color: #166ef1;
+.header-p{
+    color: #0a0a22 !important;
 }
 .hero{
     position: relative;
@@ -128,7 +128,6 @@ input{
         font-size: 1.4rem;
     }
     a , .flex1a{
-        color: #166ef1;
         text-align: center;
         font-size: 1.2rem;
         font-weight: 500;
@@ -189,6 +188,9 @@ input{
 }
 
 @media (min-width:35em) and (max-width:59em) {
+    .hero-title{
+        color: $the-blue;
+    }
     .explanation-after{
         max-width: min(80%, 800px);
         margin: 0 auto;
@@ -216,6 +218,9 @@ input{
 }
 
 @media (min-width:60em) {
+    .hero-title{
+        color: $the-blue;
+    }
     .explanation-after{
     max-width: min(90%, 800px);
     margin:0 auto;

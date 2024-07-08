@@ -1,25 +1,7 @@
 @import 'src/themes.scss';
-.hero{
-    position: relative;
-    height: 100vh;
-    height: 100%;
-    padding-bottom: 3rem;
-}
 .hero-title{
-    font-weight: 700;
-    font-size: clamp(2.5rem, 10vw + 0.5rem, 3.5rem);
-    text-transform: capitalize;
-    color: $the-blue;
-    padding-top: 2em;
-    z-index: 2;
-    position: relative;
-}
-.hero-p{
-    color: $the-blue;
-    line-height: 1;
-    font-weight: 900;
-    z-index: 2;
-    position: relative;
+    font-size:  clamp(2.5rem, 4vw + 0.5rem, 3.5rem) !important;
+    color: black;
 }
 .hero-image{
     position: absolute;
@@ -208,6 +190,9 @@ border-radius: 20px;
     }
 }
 @media (min-width:35em) and (max-width:59em) {
+    .hero-title{
+        color: $the-blue;
+    }
     .solutions{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -231,6 +216,9 @@ border-radius: 20px;
 }
 
 @media (min-width:60em) {
+    .hero-title{
+        color: $the-blue;
+    }
     .hero-image{
     -webkit-mask-image: linear-gradient(to left, black, black 10%, transparent);
     mask-image: linear-gradient(to left, black, black 10%, transparent);     

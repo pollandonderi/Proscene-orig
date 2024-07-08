@@ -1,10 +1,14 @@
 @import 'src/themes.scss';
+.hero-title{
+    font-size: clamp(2.5rem, 4vw + 0.5rem, 3.5rem) !important;
+    color: black;
+}
 a{
     color: #166ef1;
     cursor: pointer;
 }
 .header-p{
-    color: $the-blue !important;
+    color: #0a0a22 !important;
 }
 .hero{
     position: relative;
@@ -171,6 +175,9 @@ input{
 }
 
 @media (min-width:35em) and (max-width:59em) {
+    .hero-title{
+        color: $the-blue;
+    }
     .explanation-after{
         max-width: min(80%, 800px);
         margin: 0 auto;
@@ -198,6 +205,9 @@ input{
 }
 
 @media (min-width:60em) {
+    .hero-title{
+        color: $the-blue;
+    }
     .explanation-after{
     max-width: min(90%, 800px);
     margin:0 auto;
