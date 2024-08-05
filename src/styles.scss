@@ -98,11 +98,15 @@ font-weight: 500;
   .demo-button1{
     border: 1px solid #fff;
     padding: 4px 21px;
-  // text-transform: uppercase;
   background-color: #fff;
   color: $secondary !important;
   border-radius: 30px;
   transition: all 0.5s ease;
+  }
+  .demo-button1:hover{
+    background-color: #084C61;
+    color: #ffff !important;
+    border: 1px solid #fff;
   }
   .demo-button{
     border: 1px solid #fff;
@@ -115,8 +119,9 @@ font-weight: 500;
   transition: all 0.5s ease;
   }
   .demo-button:hover{
-    background-color: #bf2525;
-    color: #0a0a22;
+    background-color: #fff;
+    color: #084C61;
+    border: 1px solid #084C61;
   }
   a{
     cursor: pointer;
@@ -170,7 +175,7 @@ transition: all 0.5s ease;
 @media (min-width:45em){
 
     .demo-button{
-        padding: 7px 23px;
+        padding: 12px 28px;
     }
     .flex1{
       grid-template-columns: repeat(2, 1fr);

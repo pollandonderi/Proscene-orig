@@ -18,7 +18,6 @@
     flex-direction:column;
     justify-items:center;
     align-items:center;
-    padding-inline:2em;
     width:min(50%, 800px)
       p{
         text-wrap:balance;
@@ -45,5 +44,8 @@
     .testimony{
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 2rem;
+    }
+    .testimonial{
+      padding-inline:2em;
     }
 }
